@@ -1,0 +1,51 @@
+permitNumber,Display,category,status,year,counted,units_lost
+BLDG875824,3956 LYNDALE AVE N,duplex_to_sfd,Closed,2021,record_only,0
+BLDG811555,4621 ALDRICH AVE S,duplex_to_sfd,Closed,2020,record_only,0
+BLDG916646,1504 2ND ST NE,duplex_to_sfd,Closed,2021,record_only,0
+BLDG1083301,170 EMERALD ST,duplex_to_sfd,Closed,2024,record_only,0
+BLDG913999,621 7TH AVE SE,duplex_to_sfd,Closed,2021,record_only,0
+BLDG1016010,3445 BLAISDELL AVE,duplex_to_sfd,Closed,2023,record_only,0
+BLDG906707,435 RIDGEWOOD AVE,duplex_to_sfd,Closed,2022,yes,1
+BLDG970158,707 10TH AVE SE,duplex_to_sfd,Closed,2022,yes,1
+BLDG985643,1021 19TH AVE NE,duplex_to_sfd,Closed,2023,yes,1
+BLDG1075107,1609 11TH AVE S,duplex_to_sfd,Closed,2024,yes,1
+BLDG873278,2102 CLINTON AVE,duplex_to_sfd,Closed,2021,yes,1
+BLDG872245,3441 ELLIOT AVE,duplex_to_sfd,Closed,2021,yes,1
+BLDG976309,4117 CHICAGO AVE,duplex_to_sfd,Closed,2023,yes,1
+BLDG966364,4320 ZENITH AVE S,duplex_to_sfd,Closed,2022,yes,1
+BLDG908703,4749 BLAISDELL AVE,duplex_to_sfd,Closed,2021,yes,1
+BLDG1011615,524 12TH AVE SE,duplex_to_sfd,Closed,2023,yes,1
+BLDG905828,5633 42ND AVE S,duplex_to_sfd,Closed,2021,yes,1
+BLDG833287,1904 26TH ST E,duplex_to_sfd,Closed,2020,yes,1
+BLDG948615,3716 LONGFELLOW AVE,duplex_to_sfd,Closed,2022,yes,1
+BLDG811317,3159 14TH AVE S,duplex_to_sfd,Closed,2020,yes,1
+BLDG867693,3912 41ST AVE S,duplex_to_sfd,Closed,2021,yes,1
+BLDG971143,3236 HUMBOLDT AVE S,duplex_to_sfd,Closed,2022,yes,1
+BLDG1176044,1320 VINCENT AVE N,duplex_to_sfd,Closed,2026,yes,1
+BLDG1122067,1514 HILLSIDE AVE N,duplex_to_sfd,Closed,2025,yes,1
+BLDG1156516,1789 JAMES AVE S,duplex_to_sfd,Closed,2025,yes,1
+BLDG1190127,2107 26TH AVE N,duplex_to_sfd,Closed,2026,yes,1
+BLDG1196733,2300 MILWAUKEE AVE,duplex_to_sfd,Issued,2026,yes,1
+BLDG995622,2410 22ND ST E,duplex_to_sfd,Closed,2023,yes,1
+BLDG1117865,2432 PLEASANT AVE,duplex_to_sfd,Closed,2025,yes,1
+BLDG1155610,204 5TH AVE SE,duplex_to_sfd,Closed,2025,yes,1
+BLDG1089004,2515 UPTON AVE N,duplex_to_sfd,Closed,2024,yes,1
+BLDG1178854,2810 COLFAX AVE N,duplex_to_sfd,Closed,2026,yes,1
+BLDG1113696,2437 29TH AVE S,duplex_to_sfd,Closed,2025,yes,1
+BLDG1162416,3024 GRAND AVE S,duplex_to_sfd,Closed,2026,yes,1
+BLDG1137769,3100 DUPONT AVE S,duplex_to_sfd,Closed,2025,yes,1
+BLDG1137530,3149 PARK AVE,duplex_to_sfd,Closed,2025,yes,1
+BLDG1023802,2853 35TH AVE S,duplex_to_sfd,Closed,2023,yes,1
+BLDG1183006,3400 MINNEHAHA AVE,duplex_to_sfd,Issued,2026,yes,1
+BLDG1154321,3412 PORTLAND AVE,duplex_to_sfd,Issued,2025,yes,1
+BLDG1149834,707 MAIN ST NE,duplex_to_sfd,Closed,2025,yes,1
+BLDG876437,1512 MONROE ST NE,duplex_to_sfd,Closed,2021,yes,1
+BLDG1195309,2503 IRVING AVE S,duplex_to_sfd,Issued,2026,yes,1
+BLDG1079519,2504 EUCLID PL,duplex_to_sfd,Issued,2025,yes,1
+BLDG1168808,3021 18TH AVE S,duplex_to_sfd,Closed,2026,yes,1
+BLDG1044048,1315 59TH ST W,duplex_to_sfd,Closed,2024,yes,1
+BLDG935496,2600 22ND ST E,duplex_to_sfd,Closed,2022,yes,1
+BLDG1112998,3016 HARRIET AVE,duplex_to_sfd,Closed,2025,yes,1
+BLDG1110287,2200 LYNDALE AVE N,triplex_to_sfd,Issued,2025,yes,2
+BLDG804387,2931 PORTLAND AVE,triplex_to_duplex,Closed,2020,yes,1
+BLDG1134069,3145 2ND AVE S,triplex_to_sfd,Closed,2025,record_only,0

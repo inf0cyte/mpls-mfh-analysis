@@ -1,0 +1,158 @@
+permitNumber,category,counted,note
+BLDG923457,new_duplex,yes,New duplex whose unit fields are coded 0; description says new duplex
+BLDG828824,new_duplex,yes,New duplex whose unit fields are coded 0; description says new duplex
+BLDG1045848,new_duplex,yes,Coded 3 units (TFD); description is side-by-side duplex plus detached ADU
+BLDG831488,new_triplex,yes,Coded Comm; description is a three-unit townhouse building
+BLDG1171713,new_sfd_exclude,no,Re-permit to finish a house already under construction; not a new start
+BLDG916127,sfd_to_duplex,yes,Description: convert single-family dwelling to duplex / add second dwelling unit
+BLDG829562,sfd_to_duplex,yes,Description: convert single-family dwelling to duplex / add second dwelling unit
+BLDG846524,sfd_to_duplex,yes,Description: convert single-family dwelling to duplex / add second dwelling unit
+BLDG875538,sfd_to_duplex,yes,Description: convert single-family dwelling to duplex / add second dwelling unit
+BLDG1032991,sfd_to_duplex,yes,Description: convert single-family dwelling to duplex / add second dwelling unit
+BLDG972011,sfd_to_duplex,yes,Description: convert single-family dwelling to duplex / add second dwelling unit
+BLDG1010426,sfd_to_duplex,yes,Description: convert single-family dwelling to duplex / add second dwelling unit
+BLDG973081,sfd_to_duplex,yes,Description: convert single-family dwelling to duplex / add second dwelling unit
+BLDG857583,sfd_to_duplex,yes,Description: convert single-family dwelling to duplex / add second dwelling unit
+BLDG833069,sfd_to_duplex,yes,Description: convert single-family dwelling to duplex / add second dwelling unit
+BLDG860336,sfd_to_duplex,yes,Description: convert single-family dwelling to duplex / add second dwelling unit
+BLDG814762,sfd_to_duplex,yes,Description: convert single-family dwelling to duplex / add second dwelling unit
+BLDG987849,sfd_to_duplex,yes,Description: convert single-family dwelling to duplex / add second dwelling unit
+BLDG976147,sfd_to_duplex,yes,Description: convert single-family dwelling to duplex / add second dwelling unit
+BLDG1033005,sfd_to_duplex,yes,Description: convert single-family dwelling to duplex / add second dwelling unit
+BLDG913067,sfd_to_duplex,yes,Description: convert single-family dwelling to duplex / add second dwelling unit
+BLDG839296,sfd_to_duplex,yes,Description: convert single-family dwelling to duplex / add second dwelling unit
+BLDG843034,sfd_to_duplex,yes,Description: convert single-family dwelling to duplex / add second dwelling unit
+BLDG845370,sfd_to_duplex,yes,Description: convert single-family dwelling to duplex / add second dwelling unit
+BLDG783781,sfd_to_duplex,yes,Description: convert single-family dwelling to duplex / add second dwelling unit
+BLDG1034473,sfd_to_duplex,yes,Description: convert single-family dwelling to duplex / add second dwelling unit
+BLDG915932,sfd_to_duplex,yes,Description: convert single-family dwelling to duplex / add second dwelling unit
+BLDG930027,sfd_to_duplex,yes,Description: convert single-family dwelling to duplex / add second dwelling unit
+BLDG824253,sfd_to_duplex,yes,Description: convert single-family dwelling to duplex / add second dwelling unit
+BLDG1156586,sfd_to_duplex,yes,Description: convert single-family dwelling to duplex / add second dwelling unit
+BLDG1116485,sfd_to_duplex,yes,Description: convert single-family dwelling to duplex / add second dwelling unit
+BLDG1047174,sfd_to_duplex,yes,Description: convert single-family dwelling to duplex / add second dwelling unit
+BLDG1106589,sfd_to_duplex,yes,Description: convert single-family dwelling to duplex / add second dwelling unit
+BLDG971084,sfd_to_duplex,yes,Description: convert single-family dwelling to duplex / add second dwelling unit
+BLDG972192,sfd_to_duplex,yes,Description: convert single-family dwelling to duplex / add second dwelling unit
+BLDG1187480,sfd_to_duplex,yes,Description: convert single-family dwelling to duplex / add second dwelling unit
+BLDG1121564,sfd_to_duplex,yes,Description: convert single-family dwelling to duplex / add second dwelling unit
+BLDG1130315,sfd_to_duplex,yes,Description: convert single-family dwelling to duplex / add second dwelling unit
+BLDG1125435,sfd_to_duplex,yes,Description: convert single-family dwelling to duplex / add second dwelling unit
+BLDG1150519,sfd_to_duplex,yes,Description: convert single-family dwelling to duplex / add second dwelling unit
+BLDG959975,sfd_to_duplex,yes,Description: convert single-family dwelling to duplex / add second dwelling unit
+BLDG841823,sfd_to_duplex,yes,Description: convert single-family dwelling to duplex / add second dwelling unit
+BLDG913477,sfd_to_duplex,yes,Description: convert single-family dwelling to duplex / add second dwelling unit
+BLDG1100273,sfd_to_duplex,yes,Description: convert single-family dwelling to duplex / add second dwelling unit
+BLDG854357,sfd_to_duplex,yes,Description: convert single-family dwelling to duplex / add second dwelling unit
+BLDG873363,paper_to_duplex,no,Reconversion: building was a duplex until 2019 (per description)
+BLDG878970,paper_to_duplex,no,Legalizes an existing duplex; SAC net 0
+BLDG989261,paper_to_duplex,no,Legalizes previously completed unpermitted conversion
+BLDG1166715,paper_to_duplex,no,No work; permit converts record back to two-family
+BLDG843672,paper_to_duplex,no,Converts SFD back to duplex by re-establishing a kitchen
+BLDG1084533,paper_to_duplex,no,Existing basement ADU re-designated as second duplex unit
+BLDG819577,duplex_to_triplex,yes,Description: convert duplex to triplex / add third unit
+BLDG850376,duplex_to_triplex,yes,Description: convert duplex to triplex / add third unit
+BLDG1132793,duplex_to_triplex,yes,Description: convert duplex to triplex / add third unit
+BLDG960754,duplex_to_triplex,yes,Description: convert duplex to triplex / add third unit
+BLDG924866,duplex_to_triplex,yes,Description: convert duplex to triplex / add third unit
+BLDG989932,duplex_to_triplex,yes,Description: convert duplex to triplex / add third unit
+BLDG968256,duplex_to_triplex,yes,Description: convert duplex to triplex / add third unit
+BLDG923958,duplex_to_triplex,yes,Description: convert duplex to triplex / add third unit
+BLDG843129,duplex_to_triplex,yes,Description: convert duplex to triplex / add third unit
+BLDG881599,duplex_to_triplex,yes,Description: convert duplex to triplex / add third unit
+BLDG927192,duplex_to_triplex,yes,Description: convert duplex to triplex / add third unit
+BLDG890202,duplex_to_triplex,yes,Description: convert duplex to triplex / add third unit
+BLDG1063228,duplex_to_triplex,yes,Description: convert duplex to triplex / add third unit
+BLDG1078177,duplex_to_triplex,yes,Description: convert duplex to triplex / add third unit
+BLDG918160,duplex_to_triplex,yes,Description: convert duplex to triplex / add third unit
+BLDG867483,duplex_to_triplex,yes,Description: convert duplex to triplex / add third unit
+BLDG834471,duplex_to_triplex,yes,Description: convert duplex to triplex / add third unit
+BLDG873371,duplex_to_triplex,yes,Description: convert duplex to triplex / add third unit
+BLDG879948,duplex_to_triplex,yes,Description: convert duplex to triplex / add third unit
+BLDG1106308,sfd_to_triplex,yes,Description: convert SFD to triplex
+BLDG1082800,reviewed_not_counted,no,Legalizes an existing 3rd unit in a duplex
+BLDG811958,reviewed_not_counted,no,Third unit in a mixed-use (former grocery) building
+BLDG1115872,reviewed_not_counted,no,Plumbing permit only for 815 6th St SE; no building permit found
+BLDG840462,reviewed_not_counted,no,Record correction for a pre-2020 permit
+BLDG864082,reviewed_not_counted,no,Office building converted to mixed use with 3 apartments
+BLDG970292,reviewed_not_counted,no,Plumbing permit only (house moved onto lot); no building permit found
+BLDG1044137,reviewed_not_counted,no,Remodel of an existing duplex; description does not show a unit added
+BLDG842434,reviewed_not_counted,no,No description in source data
+BLDG850108,cancelled_or_expired,no,Would be sfd_to_duplex; status Cancelled or Expired
+BLDG858218,cancelled_or_expired,no,Would be sfd_to_duplex; status Cancelled or Expired
+BLDG822316,cancelled_or_expired,no,Would be sfd_to_duplex; status Cancelled or Expired
+BLDG903082,cancelled_or_expired,no,Would be sfd_to_duplex; status Cancelled or Expired
+BLDG1030884,cancelled_or_expired,no,Would be sfd_to_duplex; status Cancelled or Expired
+BLDG828967,cancelled_or_expired,no,Would be group home to duplex; status Cancelled or Expired
+BLDG1109422,cancelled_or_expired,no,Would be sfd_to_duplex; status Cancelled or Expired
+BLDG1020197,cancelled_or_expired,no,Would be sfd_to_duplex; status Cancelled or Expired
+BLDG813161,cancelled_or_expired,no,Would be duplex_to_triplex; status Cancelled or Expired
+BLDG823848,cancelled_or_expired,no,Would be duplex_to_triplex; status Cancelled or Expired
+BLDG905854,cancelled_or_expired,no,Would be duplex_to_triplex; status Cancelled or Expired
+BLDG881140,cancelled_or_expired,no,Would be duplex_to_sfd; status Cancelled or Expired
+BLDG875824,duplex_to_sfd,record_only,Records correction 2 to 1 units; no work
+BLDG811555,duplex_to_sfd,record_only,Administrative permit updating records
+BLDG916646,duplex_to_sfd,record_only,Legalizes a conversion done earlier
+BLDG1083301,duplex_to_sfd,record_only,Legalizes existing duplex as SFD
+BLDG913999,duplex_to_sfd,record_only,Converts an illegal duplex (record was SFD)
+BLDG1016010,duplex_to_sfd,record_only,Work completed by previous owner without permit
+BLDG906707,duplex_to_sfd,yes,Description: convert duplex / two-family dwelling to single-family
+BLDG970158,duplex_to_sfd,yes,Description: convert duplex / two-family dwelling to single-family
+BLDG985643,duplex_to_sfd,yes,Description: convert duplex / two-family dwelling to single-family
+BLDG1075107,duplex_to_sfd,yes,Description: convert duplex / two-family dwelling to single-family
+BLDG873278,duplex_to_sfd,yes,Description: convert duplex / two-family dwelling to single-family
+BLDG872245,duplex_to_sfd,yes,Description: convert duplex / two-family dwelling to single-family
+BLDG976309,duplex_to_sfd,yes,Description: convert duplex / two-family dwelling to single-family
+BLDG966364,duplex_to_sfd,yes,Description: convert duplex / two-family dwelling to single-family
+BLDG908703,duplex_to_sfd,yes,Description: convert duplex / two-family dwelling to single-family
+BLDG1011615,duplex_to_sfd,yes,Description: convert duplex / two-family dwelling to single-family
+BLDG905828,duplex_to_sfd,yes,Description: convert duplex / two-family dwelling to single-family
+BLDG833287,duplex_to_sfd,yes,Description: convert duplex / two-family dwelling to single-family
+BLDG948615,duplex_to_sfd,yes,Description: convert duplex / two-family dwelling to single-family
+BLDG811317,duplex_to_sfd,yes,Description: convert duplex / two-family dwelling to single-family
+BLDG867693,duplex_to_sfd,yes,Description: convert duplex / two-family dwelling to single-family
+BLDG971143,duplex_to_sfd,yes,Description: convert duplex / two-family dwelling to single-family
+BLDG1176044,duplex_to_sfd,yes,Description: convert duplex / two-family dwelling to single-family
+BLDG1122067,duplex_to_sfd,yes,Description: convert duplex / two-family dwelling to single-family
+BLDG1156516,duplex_to_sfd,yes,Description: convert duplex / two-family dwelling to single-family
+BLDG1190127,duplex_to_sfd,yes,Description: convert duplex / two-family dwelling to single-family
+BLDG1196733,duplex_to_sfd,yes,Description: convert duplex / two-family dwelling to single-family
+BLDG995622,duplex_to_sfd,yes,Description: convert duplex / two-family dwelling to single-family
+BLDG1117865,duplex_to_sfd,yes,Description: convert duplex / two-family dwelling to single-family
+BLDG1155610,duplex_to_sfd,yes,Description: convert duplex / two-family dwelling to single-family
+BLDG1089004,duplex_to_sfd,yes,Description: convert duplex / two-family dwelling to single-family
+BLDG1178854,duplex_to_sfd,yes,Description: convert duplex / two-family dwelling to single-family
+BLDG1113696,duplex_to_sfd,yes,Description: convert duplex / two-family dwelling to single-family
+BLDG1162416,duplex_to_sfd,yes,Description: convert duplex / two-family dwelling to single-family
+BLDG1137769,duplex_to_sfd,yes,Description: convert duplex / two-family dwelling to single-family
+BLDG1137530,duplex_to_sfd,yes,Description: convert duplex / two-family dwelling to single-family
+BLDG1023802,duplex_to_sfd,yes,Description: convert duplex / two-family dwelling to single-family
+BLDG1183006,duplex_to_sfd,yes,Description: convert duplex / two-family dwelling to single-family
+BLDG1154321,duplex_to_sfd,yes,Description: convert duplex / two-family dwelling to single-family
+BLDG1149834,duplex_to_sfd,yes,Description: convert duplex / two-family dwelling to single-family
+BLDG876437,duplex_to_sfd,yes,Description: convert duplex / two-family dwelling to single-family
+BLDG1195309,duplex_to_sfd,yes,Description: convert duplex / two-family dwelling to single-family
+BLDG1079519,duplex_to_sfd,yes,Description: convert duplex / two-family dwelling to single-family
+BLDG1106014,sfd_to_duplex,yes,description 'CONVERT SFD TO TFD'
+BLDG975390,sfd_to_duplex,yes,addition converting existing SFD into a two-family dwelling
+BLDG945956,duplex_to_triplex,yes,'ADD THIRD UNIT IN THE BASEMENT OF DUPLEX'
+BLDG1168808,duplex_to_sfd,yes,convert to single family house from 2 dwelling units
+BLDG1044048,duplex_to_sfd,yes,conversion to SFD from two dwellings
+BLDG935496,duplex_to_sfd,yes,convert up/down duplex to SFD
+BLDG1112998,duplex_to_sfd,yes,convert up/down duplex to SFD
+BLDG1110287,triplex_to_sfd,yes,convert triplex to single-family dwelling
+BLDG804387,triplex_to_duplex,yes,convert 3 unit to duplex
+BLDG1134069,triplex_to_sfd,record_only,administrative permit documenting a prior 3-unit to SFD conversion
+BLDG869987,reviewed_not_counted,no,"Companion permit (deck) to BLDG854357, which is the counted conversion"
+BLDG912375,reviewed_not_counted,no,"Companion permit to BLDG833069, which is the counted conversion"
+BLDG982261,reviewed_not_counted,no,Planned third unit abandoned per description
+BLDG882666,reviewed_not_counted,no,Basement ADU; description states it is not a duplex conversion
+BLDG1089300,reviewed_not_counted,no,Attic space added to an existing unit; no unit added
+BLDG907533,reviewed_not_counted,no,High-rise condo floors; not a duplex/triplex
+BLDG1089062,reviewed_not_counted,no,Bathroom work in an existing 3-unit building
+BLDG905894,reviewed_not_counted,no,Commercial property to SFD
+BLDG873534,reviewed_not_counted,no,Church to SFD
+BLDG945416,reviewed_not_counted,no,Church to SFD (companion permit)
+BLDG1071174,reviewed_not_counted,no,Commercial space to SFD
+BLDG835952,reviewed_not_counted,no,Conversion to single family; prior unit count not stated
+BLDG1141307,reviewed_not_counted,no,Conversion to single family; prior unit count not stated

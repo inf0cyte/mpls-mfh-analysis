@@ -1,0 +1,174 @@
+permitNumber,category,Display,status,occupancyType,workType,issueDate_utc,year,units_added,zone_2017,zone_2023,coord_source,newly_allowed
+BLDG1117323,New duplex,1051 20TH AVE SE,Closed,TFD,New,2025-08-13,2025,2,R1A,R1A,permit record,True
+BLDG1080507,New duplex,1061 23RD AVE SE,Closed,TFD,New,2024-10-07,2024,2,R1A,R1A,permit record,True
+BLDG1008146,New duplex,1029 22ND AVE N,Open,TFD,New,2024-10-25,2024,2,R2B,R2B,permit record,False
+BLDG878157,New duplex,1045 26TH AVE SE,Closed,TFD,New,2021-05-27,2021,2,R2B,R2B,permit record,False
+BLDG847991,New duplex,1076 14TH AVE SE,Closed,TFD,New,2020-10-22,2020,2,R1A,R1A,permit record,True
+BLDG1030214,New duplex,1111 JAMES AVE N,Issued,TFD,New,2025-07-10,2025,2,R2B,R2B,permit record,False
+BLDG1034130,New duplex,1108 7TH ST SE,Closed,TFD,New,2024-02-27,2024,2,R2B,R2B,permit record,False
+BLDG839340,New duplex,1048 23RD AVE SE,Closed,TFD,New,2020-09-03,2020,2,R1A,R1A,permit record,True
+BLDG1075696,New duplex,1057 23RD AVE SE,Closed,TFD,New,2024-10-28,2024,2,R1A,R1A,permit record,True
+BLDG963598,New duplex,1106 7TH ST SE,Closed,TFD,New,2022-11-04,2022,2,R2B,R2B,permit record,False
+BLDG1165650,New duplex,1088 22ND AVE SE,Issued,TFD,New,2026-07-23,2026,2,R1A,R1A,permit record,True
+BLDG981553,New duplex,1218 IRVING AVE N,Issued,TFD,New,2025-08-15,2025,2,R2B,R2B,permit record,False
+BLDG1119814,New duplex,1212 8TH ST SE,Closed,TFD,New,2025-10-09,2025,2,R2B,R2B,permit record,False
+BLDG1134640,New duplex,1343 LINCOLN ST NE,Issued,TFD,New,2025-10-07,2025,2,R1A,R1A,permit record,True
+BLDG898429,New duplex,1523 ROLLINS AVE SE,Closed,TFD,New,2021-09-27,2021,2,R2B,R2B,permit record,False
+BLDG812314,New duplex,1726 KENWOOD PKWY,Closed,TFD,New,2020-03-03,2020,2,R1,R1,permit record,True
+BLDG961668,New duplex,1806 COMO AVE SE,Closed,TFD,New,2022-09-19,2022,2,R2B,R4,permit record,False
+BLDG955853,New duplex,1800 COMO AVE SE,Closed,TFD,New,2022-08-08,2022,2,R2B,R4,permit record,False
+BLDG909841,New duplex,1915 COMO AVE SE,Closed,TFD,New,2021-12-21,2021,2,R1A,R1A,permit record,True
+BLDG985599,New duplex,2028 JAMES AVE N,Open,TFD,New,2025-01-03,2025,2,R2B,R2B,permit record,False
+BLDG985600,New duplex,2034 JAMES AVE N,Issued,TFD,New,2025-03-17,2025,2,R2B,R2B,permit record,False
+BLDG1049740,New duplex,2125 JAMES AVE N,Issued,TFD,New,2025-03-27,2025,2,R2B,R2B,permit record,False
+BLDG926022,New duplex,2406 MCNAIR AVE,Closed,TFD,New,2022-08-04,2022,2,R1A,R1A,permit record,True
+BLDG969789,New duplex,2334 LOGAN AVE N,Closed,TFD,New,2023-05-25,2023,2,R2B,R2B,permit record,False
+BLDG1124083,New duplex,2919 3RD ST N,Issued,TH,New,2026-04-15,2026,2,R2B,R2B,permit record,False
+BLDG1093505,New duplex,2905 43RD ST W,Issued,TFD,New,2025-04-04,2025,2,R2B,R2B,permit record,False
+BLDG1110035,New duplex,2913 4TH ST N,Closed,TFD,New,2025-05-13,2025,2,R2B,R2B,permit record,False
+BLDG876664,New duplex,2954 HAYES ST NE,Closed,TFD,New,2021-06-28,2021,2,R1A,R1A,permit record,True
+BLDG1142774,New duplex,2953 PIERCE ST NE,Issued,TFD,New,2026-01-29,2026,2,R1A,R1A,permit record,True
+BLDG966760,New duplex,3111 DUPONT AVE N,Closed,TFD,New,2023-03-30,2023,2,R2B,R2B,permit record,False
+BLDG1008810,New duplex,3201 6TH ST N,Issued,TFD,New,2024-10-03,2024,2,R4,R4,permit record,False
+BLDG1031520,New duplex,3229 4TH ST N,Closed,TFD,New,2024-01-18,2024,2,R2B,R2B,permit record,False
+BLDG1123807,New duplex,3657 LYNDALE AVE N,Issued,TFD,New,2025-12-23,2025,2,R1A,R1A,permit record,True
+BLDG847038,New duplex,3541 3RD AVE S,Closed,TFD,New,2021-04-01,2021,2,R2B,R2B,permit record,False
+BLDG1051853,New duplex,3711 COLGATE AVE,Closed,TFD,New,2024-09-27,2024,2,R1A,R1A,permit record,True
+BLDG876079,New duplex,3636 28TH AVE S,Closed,TFD,New,2021-04-29,2021,2,R1A,R1A,permit record,True
+BLDG818951,New duplex,3928 ABBOTT AVE S,Closed,TFD,New,2020-04-28,2020,2,R1,R1,permit record,True
+BLDG1123821,New duplex,3711 PENN AVE N,Issued,TH,New,2026-03-23,2026,2,R2B,R2B,permit record,False
+BLDG1123782,New duplex,4238 FREMONT AVE N,Issued,TFD,New,2025-11-07,2025,2,R4,R4,permit record,False
+BLDG1041906,New duplex,4321 44TH AVE S,Closed,TFD,New,2024-03-14,2024,2,R1A,R1A,permit record,True
+BLDG1102766,New duplex,4047 31ST AVE S,Issued,TFD,New,2025-07-10,2025,2,R1A,R1A,permit record,True
+BLDG908122,New duplex,4221 44TH AVE S,Closed,TFD,New,2021-11-01,2021,2,R1A,R1A,permit record,True
+BLDG982512,New duplex,4355 45TH AVE S,Closed,TFD,New,2023-05-01,2023,2,R1A,R1A,permit record,True
+BLDG858605,New duplex,4416 32ND AVE S,Closed,TFD,New,2021-02-16,2021,2,R1A,R1A,permit record,True
+BLDG1048689,New duplex,4441 UPTON AVE S,Issued,TFD,New,2025-01-31,2025,2,R1,R1,permit record,True
+BLDG835193,New duplex,4512 45TH AVE S,Closed,TFD,New,2020-06-22,2020,2,R1A,R1A,permit record,True
+BLDG759156,New duplex,4600 36TH AVE S,Closed,TFD,New,2020-09-03,2020,2,R1A,R2B,permit record,True
+BLDG1128976,New duplex,5047 EWING AVE S,Issued,TFD,New,2025-11-14,2025,2,R1A,R1A,permit record,True
+BLDG865942,New duplex,607 12TH AVE SE,Closed,TFD,New,2021-03-01,2021,2,R2B,R2B,permit record,False
+BLDG983493,New duplex,722 12TH AVE SE,Closed,TFD,New,2023-10-19,2023,2,R2B,R2B,permit record,False
+BLDG845642,New duplex,826 20TH AVE SE,Closed,TFD,New,2020-11-10,2020,2,R1A,R1A,permit record,True
+BLDG959968,New duplex,710 13TH AVE SE,Closed,TFD,New,2022-10-21,2022,2,R2B,R2B,permit record,False
+BLDG1003934,New duplex,718 13TH AVE SE,Closed,TFD,New,2023-10-02,2023,2,R2B,R2B,permit record,False
+BLDG838872,New duplex,728 8TH AVE SE,Closed,TFD,New,2021-03-12,2021,2,R5,R5,permit record,False
+BLDG925944,New duplex,715 12TH AVE SE,Closed,TFD,New,2022-04-18,2022,2,R2B,R2B,permit record,False
+BLDG846189,New duplex,864 18TH AVE SE,Closed,TFD,New,2020-11-10,2020,2,R1A,R1A,permit record,True
+BLDG983116,New duplex,887 21ST AVE SE,Closed,TFD,New,2023-03-13,2023,2,R1A,R1A,permit record,True
+BLDG1058997,New duplex,820 26TH AVE NE,Closed,TFD,New,2024-07-18,2024,2,R2B,R2B,permit record,False
+BLDG1193167,New duplex,860 18TH AVE SE,Issued,TFD,New,2026-09-14,2026,2,R2B,R2B,permit record,False
+BLDG909354,New duplex,926 17TH AVE SE,Closed,TFD,New,2021-10-28,2021,2,R1A,R1A,permit record,True
+BLDG1103845,New duplex,869 19TH AVE SE,Closed,TFD,New,2025-03-25,2025,2,R1A,R1A,permit record,True
+BLDG958008,New duplex,1311 GRAND ST NE,Closed,TFD,New,2023-10-20,2023,2,R1A,R1A,permit record,True
+BLDG851135,New duplex,1830 MCKINLEY ST NE,Closed,TFD,New,2020-12-03,2020,2,R1A,R1A,permit record,True
+BLDG835803,New duplex,1918 HILLSIDE AVE N,Closed,TFD,New,2021-03-09,2021,2,R2B,R2B,permit record,False
+BLDG859614,New duplex,2106 FAIRMOUNT ST,Closed,TFD,New,2021-03-02,2021,2,R1A,R1A,permit record,True
+BLDG969784,New duplex,2318 LOGAN AVE N,Closed,TFD,New,2023-08-01,2023,2,R2B,R2B,permit record,False
+BLDG838804,New duplex,2410 DUPONT AVE N,Closed,TFD,New,2020-08-25,2020,2,R2B,R2B,permit record,False
+BLDG1124089,New duplex,2519 3RD ST N,Issued,TH,New,2026-05-01,2026,2,R2B,R2B,permit record,False
+BLDG867289,New duplex,2531 2ND ST NE,Closed,TFD,New,2021-05-24,2021,2,R2B,R2B,permit record,False
+BLDG1019183,New duplex,2818 40TH ST W,Closed,TFD,New,2023-10-30,2023,2,R1,R1,permit record,True
+BLDG810758,New duplex,2927 MARSHALL ST NE,Closed,TFD,New,2020-02-27,2020,2,R2B,R2B,permit record,False
+BLDG966761,New duplex,3115 DUPONT AVE N,Closed,TFD,New,2023-03-30,2023,2,R4,R4,permit record,False
+BLDG1139687,New duplex,4516 PORTLAND AVE,Issued,TFD,New,2025-11-13,2025,2,R1A,R1A,permit record,True
+BLDG855991,New duplex,609 12TH AVE SE,Closed,TFD,New,2020-12-18,2020,2,R2B,R2B,permit record,False
+BLDG1003944,New duplex,621 11TH AVE SE,Closed,TFD,New,2023-10-12,2023,2,R2B,R2B,permit record,False
+BLDG1018216,New duplex,716 13TH AVE SE,Closed,TFD,New,2024-01-05,2024,2,R2B,R2B,permit record,False
+BLDG1018219,New duplex,716 11TH AVE SE,Closed,TFD,New,2023-11-07,2023,2,R2B,R2B,permit record,False
+BLDG846226,New duplex,868 18TH AVE SE,Closed,TFD,New,2020-11-20,2020,2,R1A,R1A,permit record,True
+BLDG1153501,New duplex,882 20TH AVE SE,Closed,TFD,New,2025-12-17,2025,2,R1A,R1A,permit record,True
+BLDG923457,New duplex,3641 28TH AVE S,Closed,TFD,New,2022-08-04,2022,2,R1A,R1A,permit record,True
+BLDG828824,New duplex,4433 BEARD AVE S,Closed,TFD,New,2020-06-23,2020,2,R1A,R1A,permit record,True
+BLDG1045848,New duplex,4108 4TH AVE S,Open,TFD,New,2024-05-31,2024,2,R1A,R1A,permit record,True
+BLDG877397,New triplex,1205 TALMAGE AVE SE,Closed,3to4,New,2021-04-27,2021,3,R1A,R1A,permit record,True
+BLDG844098,New triplex,1305 7TH ST SE,Closed,3to4,New,2020-11-03,2020,3,R2B,R2B,permit record,True
+BLDG922354,New triplex,1318 8TH ST SE,Closed,3to4,New,2022-01-31,2022,3,R2B,R2B,permit record,True
+BLDG988359,New triplex,1338 LOGAN AVE N,Issued,3to4,New,2023-10-23,2023,3,R1A,R1A,permit record,True
+BLDG890470,New triplex,1300 7TH ST SE,Closed,3to4,New,2021-10-14,2021,3,R2B,R2B,permit record,True
+BLDG905249,New triplex,1700 5TH AVE N,Closed,3to4,New,2022-02-04,2022,3,R1A,R1A,permit record,True
+BLDG973861,New triplex,2318 JOHNSON ST NE,Issued,3to4,New,2023-01-18,2023,3,R1A,R4,permit record,True
+BLDG1001487,New triplex,2513 29TH AVE S,Closed,3to4,New,2023-09-22,2023,3,R2B,R2B,permit record,True
+BLDG833662,New triplex,3123 43RD ST W,Closed,3to4,New,2020-08-20,2020,3,R1A,R1A,permit record,True
+BLDG902386,New triplex,3310 LYNDALE AVE S,Closed,3to4,New,2022-04-22,2022,3,OR1,OR1,permit record,False
+BLDG972052,New triplex,3334 3RD AVE S,Issued,3to4,New,2023-03-31,2023,3,R2B,R2B,permit record,True
+BLDG855690,New triplex,3545 PIERCE ST NE,Closed,3to4,New,2021-03-01,2021,3,R1A,R1A,permit record,True
+BLDG885080,New triplex,405 31ST ST E,Closed,3to4,New,2021-07-14,2021,3,R1A,R4,esri world geocoder,True
+BLDG935777,New triplex,502 37TH AVE NE,Closed,3to4,New,2022-05-20,2022,3,R1A,R1A,esri world geocoder,True
+BLDG942920,New triplex,506 37TH AVE NE,Closed,3to4,New,2022-11-14,2022,3,R1A,R1A,esri world geocoder,True
+BLDG1136524,New triplex,5656 BLAISDELL AVE,Issued,3to4,New,2025-11-17,2025,3,R1A,R1A,permit record,True
+BLDG957211,New triplex,601 14TH AVE SE,Closed,3to4,New,2022-09-26,2022,3,R2B,R2B,permit record,True
+BLDG936919,New triplex,5339 DREW AVE S,Closed,3to4,New,2022-08-31,2022,3,R1A,R1A,permit record,True
+BLDG829412,New triplex,956 19TH AVE NE,Closed,3to4,New,2020-07-02,2020,3,R5,R5,permit record,False
+BLDG983310,New triplex,5747 26TH AVE S,Closed,3to4,New,2023-05-09,2023,3,R1A,R1A,permit record,True
+BLDG1104232,New triplex,1215 8TH ST SE,Closed,3to4,New,2025-03-11,2025,3,R5,R5,permit record,False
+BLDG983663,New triplex,1731 3RD ST NE,Closed,3to4,New,2023-05-02,2023,3,R2B,R2B,permit record,True
+BLDG955421,New triplex,1911 32ND ST E,Closed,3to4,New,2022-11-09,2022,3,R2B,R2B,permit record,True
+BLDG984040,New triplex,3654 18TH AVE S,Issued,3to4,New,2023-05-23,2023,3,R2B,R2B,permit record,True
+BLDG984346,New triplex,3652 18TH AVE S,Issued,3to4,New,2023-05-23,2023,3,R2B,R2B,permit record,True
+BLDG879189,New triplex,4927 EWING AVE S,Closed,3to4,New,2021-06-04,2021,3,R1A,R1A,permit record,True
+BLDG969264,New triplex,614 11TH AVE SE,Closed,3to4,New,2023-03-02,2023,3,R2B,R2B,permit record,True
+BLDG831488,New triplex,2820 SAINT LOUIS AVE,Closed,Comm,New,2020-06-09,2020,3,R1,R1,permit record,True
+BLDG916127,SFD to duplex,1207 21ST ST E,Closed,TFD,Conversion,2022-03-11,2022,1,R2B,R2B,permit record,False
+BLDG829562,SFD to duplex,1411 6TH ST NE,Closed,SFD,Conversion,2020-05-05,2020,1,R2B,R2B,permit record,False
+BLDG846524,SFD to duplex,3021 EAST BDE MAKA SKA PKWY,Closed,SFD,Conversion,2020-11-16,2020,1,R3,R3,permit record,False
+BLDG875538,SFD to duplex,3030 CEDAR AVE S,Closed,SFD,Conversion,2021-05-21,2021,1,R2B,R2B,permit record,False
+BLDG1032991,SFD to duplex,2715 BRIGHTON AVE NE,Closed,TFD,Conversion,2024-02-21,2024,1,R1A,R1A,permit record,True
+BLDG972011,SFD to duplex,3240 PORTLAND AVE,Closed,TFD,Conversion,2022-12-28,2022,1,R2B,R2B,permit record,False
+BLDG1010426,SFD to duplex,3731 SHERIDAN AVE N,Closed,SFD,Conversion,2023-09-11,2023,1,R1A,R1A,permit record,True
+BLDG973081,SFD to duplex,3443 PLEASANT AVE,Closed,SFD,Conversion,2023-08-24,2023,1,R2B,R2B,permit record,False
+BLDG857583,SFD to duplex,3615 4TH ST N,Closed,TFD,Conversion,2021-02-19,2021,1,R1A,R1A,permit record,True
+BLDG833069,SFD to duplex,5015 41ST AVE S,Closed,SFD,Conversion,2020-06-19,2020,1,R1,R1,permit record,True
+BLDG860336,SFD to duplex,910 MOUNT CURVE AVE,Closed,SFD,Conversion,2021-02-10,2021,1,R2,R2,permit record,False
+BLDG814762,SFD to duplex,857 WEEKS AVE SE,Closed,SFD,Conversion,2020-02-03,2020,1,R2B,R2B,permit record,False
+BLDG987849,SFD to duplex,718 8TH AVE SE,Closed,TFD,Conversion,2023-09-22,2023,1,R5,R5,permit record,False
+BLDG976147,SFD to duplex,1415 5TH ST NE,Closed,TFD,Conversion,2023-03-07,2023,1,R2B,R2B,permit record,False
+BLDG1033005,SFD to duplex,2115 EMERSON AVE N,Closed,TFD,Conversion,2023-12-05,2023,1,R2B,R2B,permit record,False
+BLDG913067,SFD to duplex,2500 5TH ST NE,Closed,TFD,Conversion,2021-12-13,2021,1,C1,C1,permit record,False
+BLDG839296,SFD to duplex,1074 14TH AVE SE,Closed,TFD,Conversion,2020-08-06,2020,1,R1A,R1A,permit record,True
+BLDG843034,SFD to duplex,3338 PARK AVE,Closed,TFD,Conversion,2020-12-07,2020,1,R2B,R2B,permit record,False
+BLDG845370,SFD to duplex,3909 XERXES AVE S,Closed,SFD,Conversion,2020-10-27,2020,1,R1,R1,permit record,True
+BLDG783781,SFD to duplex,4312 CHICAGO AVE,Closed,TFD,Conversion,2020-03-10,2020,1,R2B,R2B,permit record,False
+BLDG1034473,SFD to duplex,1205 3RD ST NE,Open,TFD,Conversion,2024-01-30,2024,1,R2B,R2B,permit record,False
+BLDG915932,SFD to duplex,1015 20TH AVE SE,Closed,TFD,Conversion,2022-01-31,2022,1,R1A,R1A,permit record,True
+BLDG930027,SFD to duplex,822 7TH ST SE,Closed,TFD,Conversion,2022-03-07,2022,1,R2B,R2B,permit record,False
+BLDG824253,SFD to duplex,3615 PARK AVE,Closed,TFD,Remodel,2020-05-05,2020,1,R4,R4,permit record,False
+BLDG1156586,SFD to duplex,1311 30TH AVE N,Closed,TFD,Remodel,2026-03-10,2026,1,R2B,R2B,permit record,False
+BLDG1116485,SFD to duplex,1730 5TH ST NE,Closed,TFD,Remodel,2025-06-24,2025,1,R2B,R2B,permit record,False
+BLDG1047174,SFD to duplex,2504 WASHBURN AVE S,Open,TFD,Remodel,2024-03-14,2024,1,R1,R1,permit record,True
+BLDG1106589,SFD to duplex,3335 EMERSON AVE N,Issued,TFD,Remodel,2025-05-14,2025,1,R2B,R2B,permit record,False
+BLDG971084,SFD to duplex,3234 COLFAX AVE N,Open,TFD,Remodel,2024-08-06,2024,1,R2B,R2B,permit record,False
+BLDG972192,SFD to duplex,3340 COLFAX AVE S,Closed,TFD,Remodel,2022-12-19,2022,1,R2B,R2B,permit record,False
+BLDG1187480,SFD to duplex,3444 STEVENS AVE,Issued,TFD,Remodel,2026-07-23,2026,1,R2B,R2B,permit record,False
+BLDG1121564,SFD to duplex,4924 31ST AVE S,Closed,SFD,Remodel,2025-12-30,2025,1,R1A,R1A,permit record,True
+BLDG1130315,SFD to duplex,4437 1ST AVE S,Closed,SFD,Remodel,2025-08-18,2025,1,R1A,R1A,permit record,True
+BLDG1125435,SFD to duplex,2120 42ND ST E,Closed,SFD,Remodel,2025-10-10,2025,1,R1A,R1A,permit record,True
+BLDG1150519,SFD to duplex,3322 CLINTON AVE,Closed,TFD,Remodel,2026-01-08,2026,1,R2B,R2B,permit record,False
+BLDG959975,SFD to duplex,1412 6TH ST NE,Closed,TFD,Remodel,2022-11-30,2022,1,R2B,R2B,permit record,False
+BLDG841823,SFD to duplex,2422 HOWARD ST NE,Closed,SFD,Remodel,2021-01-11,2021,1,R1A,R1A,permit record,True
+BLDG913477,SFD to duplex,3225 BLOOMINGTON AVE,Closed,TFD,Remodel,2022-01-25,2022,1,R2B,R2B,permit record,False
+BLDG1100273,SFD to duplex,2312 POLK ST NE,Issued,3to4,Remodel,2025-05-01,2025,1,R5,R5,permit record,False
+BLDG854357,SFD to duplex,1222 WASHBURN AVE N,Closed,SFD,Addition,2020-12-03,2020,1,R1,R1,permit record,True
+BLDG1106014,SFD to duplex,2322 BRYANT AVE N,Closed,TFD,Remodel,2025-05-05,2025,1,R2B,R2B,permit record,False
+BLDG975390,SFD to duplex,2116 COMO AVE SE,Closed,TFD,Addition,2023-02-24,2023,1,R1A,R1A,permit record,True
+BLDG819577,Duplex to triplex,3220 IRVING AVE S,Closed,TFD,Conversion,2020-03-20,2020,1,R2B,R2B,permit record,True
+BLDG850376,Duplex to triplex,3436 STEVENS AVE,Closed,TFD,Conversion,2020-11-10,2020,1,R5,R5,permit record,False
+BLDG1132793,Duplex to triplex,3900 SHERIDAN AVE S,Issued,3to4,Remodel,2026-02-05,2026,1,R1,R1,permit record,True
+BLDG960754,Duplex to triplex,518 7TH AVE NE,Closed,3to4,UnitCon,2022-11-28,2022,1,R2B,R2B,permit record,True
+BLDG924866,Duplex to triplex,1129 8TH ST SE,Closed,3to4,Addition,2022-05-06,2022,1,R5,R5,permit record,False
+BLDG989932,Duplex to triplex,2409 PILLSBURY AVE,Closed,3to4,UnitCon,2023-07-28,2023,1,R2B,R2B,permit record,True
+BLDG968256,Duplex to triplex,226 33RD ST W,Closed,3to4,UnitCon,2023-08-10,2023,1,R2B,R2B,permit record,True
+BLDG923958,Duplex to triplex,310 31ST ST E,Closed,3to4,Remodel,2022-10-24,2022,1,R2B,R2B,permit record,True
+BLDG843129,Duplex to triplex,3538 PLEASANT AVE,Closed,3to4,UnitCon,2021-04-13,2021,1,R2B,R2B,permit record,True
+BLDG881599,Duplex to triplex,3520 HOLMES AVE S,Closed,3to4,UnitCon,2021-06-28,2021,1,R2B,R2B,permit record,True
+BLDG927192,Duplex to triplex,4429 PORTLAND AVE,Closed,3to4,UnitCon,2022-04-15,2022,1,R2B,R2B,permit record,True
+BLDG890202,Duplex to triplex,5115 CHICAGO AVE,Closed,3to4,UnitCon,2022-02-03,2022,1,R1A,R1A,permit record,True
+BLDG1063228,Duplex to triplex,814 6TH ST SE,Open,TFD,Conversion,2024-09-09,2024,1,R2B,R2B,permit record,True
+BLDG1078177,Duplex to triplex,4118 54TH ST E,Closed,MFD,Remodel,2024-09-06,2024,1,R1A,R1A,permit record,True
+BLDG918160,Duplex to triplex,5333 NICOLLET AVE,Closed,3to4,UnitCon,2022-01-06,2022,1,R2B,R2B,permit record,True
+BLDG867483,Duplex to triplex,2220 GRAND AVE S,Closed,TFD,Remodel,2022-04-12,2022,1,R2B,R2B,permit record,True
+BLDG834471,Duplex to triplex,2204 17TH AVE S,Closed,TFD,Conversion,2020-06-11,2020,1,R2B,R2B,permit record,True
+BLDG873371,Duplex to triplex,4334 DREW AVE S,Closed,TFD,Conversion,2021-04-15,2021,1,R1A,R1A,permit record,True
+BLDG879948,Duplex to triplex,33 MELBOURNE AVE SE,Closed,3to4,UnitCon,2021-06-09,2021,1,R2B,R2B,permit record,True
+BLDG945956,Duplex to triplex,2918 GIRARD AVE N,Closed,TFD,Remodel,2022-08-16,2022,1,R2B,R2B,permit record,True
+BLDG1106308,SFD to triplex,4330 5TH AVE S,Closed,MFD,Remodel,2025-09-16,2025,2,R1A,R1A,permit record,True
