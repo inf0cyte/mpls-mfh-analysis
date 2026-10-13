@@ -7,6 +7,8 @@ import datetime as dt
 import json
 import pathlib
 
+import arcgis
+
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 RAW = ROOT / "data" / "raw"
 MANUAL = ROOT / "data" / "manual" / "conversion_classification.csv"
@@ -29,7 +31,17 @@ CONVERSION_CATS = {
 
 
 def load(name):
-    return json.loads((RAW / f"{name}.json").read_text(encoding="utf-8"))
+    """Load a raw pull, converting unit counts to int.
+
+    Raw files pulled before the 2026 schema change hold ints; files pulled after it hold
+    strings. Comparisons such as dwellingUnitsNew == 2 silently match nothing on strings,
+    so every row is normalised here before any selection rule runs.
+    """
+    rows = json.loads((RAW / f"{name}.json").read_text(encoding="utf-8"))
+    for r in rows:
+        for f in arcgis.UNIT_FIELDS:
+            r[f] = arcgis.to_int(r.get(f))
+    return rows
 
 
 def dedupe(rows):

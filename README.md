@@ -30,7 +30,8 @@ The raw data was pulled on **2026-09-28 21:02 UTC**. The source permit layer had
 
 ```
 scripts/
-  arcgis.py         ArcGIS REST helpers (stdlib only): query with paging, counts, point-in-zone, geocode
+  arcgis.py         ArcGIS REST helpers (stdlib only): query with paging, counts, point-in-zone, geocode,
+                    permit-layer schema check
   pull_permits.py   pulls the three raw permit sets into data/raw/
   pull_zoning.py    looks up the 2017 and 2023 zoning district at every duplex/triplex permit
   classify.py       the selection rules shared by pull_zoning.py and analyze.py
@@ -42,7 +43,8 @@ data/
     permits_new_construction.{json,csv}        874 rows: every workType='New' permit issued 2020-01-01 or later
     permits_conversion_candidates.{json,csv}   827 rows: keyword/work-type search for conversions (query in manifest)
     permits_manually_classified.{json,csv}     167 rows: every permit named in the manual classification file
-    pull_manifest_permits.json                 exact SQL where-clauses, row counts, pull time, source edit time
+    pull_manifest_permits.json                 exact SQL where-clauses, row counts, pull time, source edit time,
+                                               source field types (pulls made after the schema change, see 3.8)
     zoning_point_lookups.csv                   173 rows: coordinates used and zone on each map, per permit
   manual/
     conversion_classification.csv             157 permits classified by reading their descriptions (see 3.4)
@@ -67,6 +69,10 @@ Three queries are sent to the `CCS_Permits` layer. The exact SQL text of each is
 3. **Manually classified permits:** every permit number listed in `data/manual/conversion_classification.csv`. This guarantees the source record behind every manual decision is in the repo, even when the keyword search in query 2 did not find it.
 
 Each query is paged in OBJECTID order. The script aborts if the number of rows pulled differs from the server's count.
+
+Before querying, the script reads the layer's field list and stops if any field the scripts use is missing or
+has an unexpected type (`check_permit_schema` in `arcgis.py`). The field types it saw are written to the
+manifest as `field_types`.
 
 ### 3.2 Automatic selection rules (`classify.py`)
 - **Duplicate rows:** the source layer sometimes holds more than one row per permit number. Each permit counts once, using the row with the lowest OBJECTID.
@@ -130,9 +136,33 @@ HTTP stack, sending POST bodies exactly as CPython does.
    everything in `data/derived/` were regenerated with **native CPython 3.11 on Linux** using the same scripts.
    All 14 data files are byte-identical to the browser run.
 
+**Schema update (see 3.8).** The changed scripts were tested three ways:
+- *Old data:* the updated scripts run on the 2026-09-28 raw files (integer unit fields) produce `data/derived/` files byte-identical to the previous scripts.
+- *String data:* the same raw files with every unit value converted to a string also produce byte-identical `data/derived/` files.
+- *Live pull, 2026-10-13:* `pull_permits.py` passed the schema check against the current layer and recorded `dwellingUnitsNew` and `dwellingUnitsEliminated` as `esriFieldTypeString` and `permit_Value` as `esriFieldTypeDouble`. All 875 new-construction rows arrived with string unit values and were integers after loading. The category counts matched the 2026-09-28 pull: 82 new duplexes, 28 new triplexes, 42 SFD to duplex, 20 duplex to triplex, 1 SFD to triplex, 412 new single-family homes.
+
+For comparison, the previous scripts run on string unit values do not fail. They silently count 3 new duplexes
+and 1 new triplex, because `"2" == 2` is false in Python. That is why `classify.py` now converts the unit fields
+on load.
+
 What has **not** been exercised is the network pull (`pull_permits.py`, `pull_zoning.py`, `sample.py`) under a
 native desktop Python with direct network access. If one fails there, the cause will be in `arcgis._post`,
 which is 15 lines of standard `urllib`.
+
+### 3.8 Source schema change (October 2026)
+The city changed the `CCS_Permits` schema between 2026-09-28 and 2026-10-13. The old schema was still in place
+for the 2026-09-28 pull, and the new one was observed on 2026-10-13. The exact date is unknown: the layer is
+republished daily, so its edit timestamps change every day and do not date the change.
+- `value` (permit valuation) was renamed `permit_Value`. No figure in this README uses it.
+- `dwellingUnitsNew` and `dwellingUnitsEliminated` changed from integer fields to string fields. Values now arrive as `"2"` rather than `2`.
+
+The raw files in `data/raw/` are from the 2026-09-28 pull, so they use the old schema (a `value` key and integer
+unit counts), and their manifest has no `field_types`. The scripts read both: `classify.load()` converts the unit
+fields to integers (blank stays blank) before any rule runs. A new pull writes `permit_Value` and string unit
+values exactly as the server returns them.
+
+If the city changes the schema again, `pull_permits.py` stops before pulling and names each problem field.
+Update `PERMIT_FIELDS` and `PERMIT_FIELD_TYPES` in `scripts/arcgis.py` to match.
 
 ---
 
@@ -173,6 +203,12 @@ https://services.arcgis.com/afSMGVsC7QlRK1kZ/arcgis/rest/services/CCS_Permits/Fe
 ```
 
 Replace `returnCountOnly=true` with `outFields=permitNumber,Display,status,dwellingUnitsNew,comments` to see the rows.
+
+**Unit fields in where clauses.** `dwellingUnitsNew` and `dwellingUnitsEliminated` are now text fields (see 3.8).
+Write numbers without quotes. An unquoted number is compared numerically; a quoted one is compared as text. Equality
+gives the same answer either way, but ranges do not. On 2026-10-13, among new-construction permits since 2020-01-01,
+`dwellingUnitsNew >= 5` matched 145 permits (the correct count) and `dwellingUnitsNew >= '5'` matched 57, because
+as text `'10'` sorts before `'5'`.
 
 **To audit the manual classification**, pick any rows from `data/manual/conversion_classification.csv`,
 find the same `permitNumber` in `data/raw/permits_manually_classified.csv`, and read its `comments`.
@@ -318,4 +354,4 @@ Readings:
 - **Nonconforming uses:** a duplex-to-triplex conversion in R1 or R1A (4 permits) started from an existing duplex that predates the old rules.
 - **Scope of the zoning rule:** it is based on the primary residential districts. Overlay districts and other code conditions (lot size, floor-area ratio, height) are not modeled.
 - **Demolitions are not netted out** of the gross unit counts, apart from the note in 5.3.
-- **The data is live.** Re-running the pull later will give slightly different counts, and permit statuses change.
+- **The data is live.** Re-running the pull later will give slightly different counts, and permit statuses change. The city can also change the layer's schema without notice (see 3.8).
