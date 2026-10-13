@@ -11,7 +11,11 @@ Writes to data/raw/:
                                         every permit listed in data/manual/conversion_classification.csv
                                         (pulled by permit number, so the manual review is always
                                         backed by the source record even if a keyword search misses it)
-  pull_manifest_permits.json           query text, row counts, pull time, source layer edit date
+  pull_manifest_permits.json           query text, row counts, pull time, source layer edit date,
+                                        and the source field types seen at pull time
+
+Values are written exactly as the server returns them. Since the 2026 schema change the
+unit-count fields arrive as strings (e.g. "2"); classify.py converts them to integers.
 
 Usage:  python scripts/pull_permits.py [--since 2020-01-01]
 """
@@ -70,11 +74,13 @@ def main():
     RAW.mkdir(parents=True, exist_ok=True)
 
     info = arcgis.layer_info(arcgis.PERMITS)
+    field_types = arcgis.check_permit_schema(info)  # stops here if the city changed the schema again
     manifest = {
         "pulled_at_utc": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "source_layer": arcgis.PERMITS,
         "source_layer_last_edit_utc": iso(info.get("editingInfo", {}).get("lastEditDate")),
         "fields": arcgis.PERMIT_FIELDS,
+        "field_types": field_types,
         "queries": {},
     }
     manual = ROOT / "data" / "manual" / "conversion_classification.csv"

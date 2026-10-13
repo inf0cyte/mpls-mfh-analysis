@@ -21,12 +21,44 @@ GEOCODER = "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/
 
 # Permit fields pulled into the repo. Applicant name/address fields exist in the
 # source layer but are deliberately NOT pulled (personal data, not needed).
+#
+# Source schema change (observed 2026-10-13; the layer still had the old schema on
+# 2026-09-28): `value` was renamed `permit_Value`, and `dwellingUnitsNew` /
+# `dwellingUnitsEliminated` changed from integer fields to string fields.
 PERMIT_FIELDS = [
     "OBJECTID", "permitNumber", "APN", "Display", "Latitude", "Longitude",
     "Neighborhoods_Desc", "Wards", "permitType", "occupancyType", "workType",
     "status", "milestone", "dwellingUnitsNew", "dwellingUnitsEliminated",
-    "value", "issueDate", "completeDate", "comments",
+    "permit_Value", "issueDate", "completeDate", "comments",
 ]
+
+UNIT_FIELDS = ("dwellingUnitsNew", "dwellingUnitsEliminated")
+
+_T = "esriFieldType"
+_NUMBER = {_T + "Integer", _T + "SmallInteger", _T + "BigInteger", _T + "Double"}
+# Allowed ArcGIS types for every field the scripts read. Unit counts may be numeric
+# (pre-change schema) or string (current schema); classify.py converts either to int.
+PERMIT_FIELD_TYPES = {
+    "OBJECTID": {_T + "OID"},
+    "permitNumber": {_T + "String"},
+    "APN": {_T + "String"},
+    "Display": {_T + "String"},
+    "Latitude": {_T + "Double"},
+    "Longitude": {_T + "Double"},
+    "Neighborhoods_Desc": {_T + "String"},
+    "Wards": {_T + "String"},
+    "permitType": {_T + "String"},
+    "occupancyType": {_T + "String"},
+    "workType": {_T + "String"},
+    "status": {_T + "String"},
+    "milestone": {_T + "String"},
+    "dwellingUnitsNew": _NUMBER | {_T + "String"},
+    "dwellingUnitsEliminated": _NUMBER | {_T + "String"},
+    "permit_Value": _NUMBER,
+    "issueDate": {_T + "Date"},
+    "completeDate": {_T + "Date"},
+    "comments": {_T + "String"},
+}
 
 UA = {"User-Agent": "mpls-mfh-analysis/1.0 (research script)"}
 
@@ -49,6 +81,31 @@ def _post(url, params, retries=4):
 
 def layer_info(layer_url):
     return _post(layer_url, {"f": "json"})
+
+
+def check_permit_schema(info):
+    """Stop if any field the scripts read is missing or has an unexpected type.
+
+    Returns {field: type} for the fields checked, for the pull manifest.
+    """
+    actual = {f["name"]: f["type"] for f in info.get("fields", [])}
+    problems = []
+    for name, allowed in PERMIT_FIELD_TYPES.items():
+        if name not in actual:
+            problems.append(f"missing field {name!r}")
+        elif actual[name] not in allowed:
+            problems.append(f"{name!r} is {actual[name]}, expected one of {sorted(allowed)}")
+    if problems:
+        raise SystemExit("CCS_Permits schema changed; update scripts/arcgis.py before pulling:\n  "
+                         + "\n  ".join(problems))
+    return {name: actual[name] for name in PERMIT_FIELD_TYPES}
+
+
+def to_int(v):
+    """Unit counts arrive as int (old schema) or str (current schema); None/'' stay None."""
+    if v is None or (isinstance(v, str) and not v.strip()):
+        return None
+    return int(float(v))
 
 
 def count(layer_url, where):
