@@ -2,8 +2,19 @@ permitNumber,category,counted,note
 BLDG923457,new_duplex,yes,New duplex whose unit fields are coded 0; description says new duplex
 BLDG828824,new_duplex,yes,New duplex whose unit fields are coded 0; description says new duplex
 BLDG1045848,new_duplex,yes,Coded 3 units (TFD); description is side-by-side duplex plus detached ADU
+BLDG892437,new_duplex,yes,New side-by-side two-unit dwelling whose unit fields are coded 0
+BLDG968345,new_duplex,yes,New two-family dwelling whose unit fields are coded 0
+BLDG951589,new_duplex,yes,New two-family dwelling whose unit fields are coded 0
+BLDG994987,new_duplex,yes,New two-family dwelling whose unit fields are coded 0
+BLDG961461,new_duplex,yes,New two-family dwelling whose unit fields are coded 0
+BLDG1040978,new_duplex,yes,New two-family dwelling whose unit fields are coded 0
+BLDG1053925,new_duplex,yes,New two-family dwelling whose unit fields are coded 0
+BLDG1088779,new_duplex,yes,New two-family dwelling whose unit fields are coded 0
+BLDG865937,new_duplex,yes,New two-family dwelling whose unit fields are coded 1
+BLDG1016181,new_duplex,yes,Completes the duplex permitted under BLDG790824 (cancelled); unit fields coded 0
 BLDG831488,new_triplex,yes,Coded Comm; description is a three-unit townhouse building
 BLDG1171713,new_sfd_exclude,no,Re-permit to finish a house already under construction; not a new start
+BLDG1025006,new_sfd_exclude,no,Administrative re-permit for a new contractor to complete work permitted under BLDG967039; not a new start
 BLDG916127,sfd_to_duplex,yes,Description: convert single-family dwelling to duplex / add second dwelling unit
 BLDG829562,sfd_to_duplex,yes,Description: convert single-family dwelling to duplex / add second dwelling unit
 BLDG846524,sfd_to_duplex,yes,Description: convert single-family dwelling to duplex / add second dwelling unit
@@ -136,6 +147,9 @@ BLDG1079519,duplex_to_sfd,yes,Description: convert duplex / two-family dwelling 
 BLDG1106014,sfd_to_duplex,yes,description 'CONVERT SFD TO TFD'
 BLDG975390,sfd_to_duplex,yes,addition converting existing SFD into a two-family dwelling
 BLDG945956,duplex_to_triplex,yes,'ADD THIRD UNIT IN THE BASEMENT OF DUPLEX'
+BLDG1094632,duplex_to_triplex,yes,Description: convert duplex to 3 unit apartment; new unit is basement level
+BLDG1094971,duplex_to_triplex,yes,Description: convert duplex to 3 unit apartment; new unit is basement level
+BLDG1092759,duplex_to_triplex,yes,Description: duplex to triplex; adding 3rd level
 BLDG1168808,duplex_to_sfd,yes,convert to single family house from 2 dwelling units
 BLDG1044048,duplex_to_sfd,yes,conversion to SFD from two dwellings
 BLDG935496,duplex_to_sfd,yes,convert up/down duplex to SFD

@@ -1,0 +1,70 @@
+permitNumber,Display,category,year,units_in_building,existing_units_removed_same_lot,net_units,source,wrecking_permits,demolished_parcels,evidence,note
+BLDG839340,1048 23RD AVE SE,New duplex,2020,2,1,1,wrecking permit,BLDG836395,1902923210170,,
+BLDG847991,1076 14TH AVE SE,New duplex,2020,2,2,0,wrecking permit,BLDG845554,2402924110103,,
+BLDG844098,1305 7TH ST SE,New triplex,2020,3,1,2,wrecking permit,BLDG843568,2402924420075,,
+BLDG812314,1726 KENWOOD PKWY,New duplex,2020,2,1,1,wrecking permit,BLDG797396,2802924329006,,
+BLDG851135,1830 MCKINLEY ST NE,New duplex,2020,2,1,1,same_lot_review.csv,,,"House at 1828 McKinley St (parcel 1202924440093): 1 unit in the 2019 and 2020 snapshots; in 2021 the site (parcel 1202924440221, 1828 McKinley St, built 1915) is vacant land. The permit (2020-12-03) describes a vacant lot. No wrecking permit at 18xx McKinley St NE",Removal year from the assessor snapshots only; the snapshot can lag a demolition by weeks (4433 Beard Ave S was wrecked 2019-11-19 and still shows a house in 2020)
+BLDG831488,2820 SAINT LOUIS AVE,New triplex,2020,3,0,3,same_lot_review.csv,,,2820 St Louis Ave (parcel 3202924340652): vacant land 2017-2020; replatted in 2021 into 3202924340661-663,
+BLDG833662,3123 43RD ST W,New triplex,2020,3,1,2,same_lot_review.csv,,,"House at 3117 43rd St W (parcel 0802824310050): 1 unit 2017-2020; replatted in 2021 into 3115, 3119 and 3123 43rd St W (0802824310158-160), the three units of this triplex. No wrecking permit at 31xx 43rd St W",Removal year from the assessor snapshots only; the snapshot can lag a demolition by weeks (4433 Beard Ave S was wrecked 2019-11-19 and still shows a house in 2020)
+BLDG818951,3928 ABBOTT AVE S,New duplex,2020,2,1,1,wrecking permit,BLDG809654,0802824210123,,
+BLDG828824,4433 BEARD AVE S,New duplex,2020,2,0,2,same_lot_review.csv,,,"Wrecking permit BLDG786717 (single-family dwelling, 1 SAC unit) issued 2019-11-19, with new-house permit BLDG788384 the same day (later cancelled). Parcel 0802824340108: 1 unit 2017-2020, duplex 2022","Removed before 2020-01-01, so not subtracted"
+BLDG835193,4512 45TH AVE S,New duplex,2020,2,1,1,wrecking permit,BLDG810402,0702823440154,,
+BLDG845642,826 20TH AVE SE,New duplex,2020,2,1,1,wrecking permit,BLDG845544,1902923230050,,
+BLDG846189,864 18TH AVE SE,New duplex,2020,2,1,1,wrecking permit,BLDG845550,1902923230115,,
+BLDG846226,868 18TH AVE SE,New duplex,2020,2,1,1,wrecking permit,BLDG845536,1902923230116,,
+BLDG865937,1022 12TH AVE SE,New duplex,2021,2,1,1,wrecking permit,BLDG854838,2402924120122,,
+BLDG877397,1205 TALMAGE AVE SE,New triplex,2021,3,1,2,same_lot_review.csv,,,"Parcel 2402924120043: house, 1 unit, 2017-2021; triplex, 3 units, 2022-2023. No wrecking permit","A companion HVAC permit (BLDG898134) describes 3 remodeled units, so the house may have been rebuilt rather than demolished; 1 existing unit either way"
+BLDG890470,1300 7TH ST SE,New triplex,2021,3,2,1,wrecking permit,BLDG898316,2402924420083,,
+BLDG909841,1915 COMO AVE SE,New duplex,2021,2,1,1,wrecking permit,BLDG909630,1902923220021,,
+BLDG859614,2106 FAIRMOUNT ST,New duplex,2021,2,0,2,same_lot_review.csv,,,Parcel 1902923240109 (2100 Fairmount St): 4-unit apartment building (built 1922) in every snapshot 2017-2026; the 2025 and 2026 snapshots add a duplex built 2021 on the same parcel,Second building on a lot whose 4-unit building remains
+BLDG876664,2954 HAYES ST NE,New duplex,2021,2,1,1,wrecking permit,BLDG876266,0102924430136,,
+BLDG855690,3545 PIERCE ST NE,New triplex,2021,3,0,3,same_lot_review.csv,,,"Parcel 0102924210199: vacant land in the 2018, 2019 and 2021 snapshots (no 2017 or 2020 record)",
+BLDG876079,3636 28TH AVE S,New duplex,2021,2,1,1,wrecking permit,BLDG876066,0102824430055,,
+BLDG892437,3902 EWING AVE S,New duplex,2021,2,1,1,wrecking permit,BLDG875262,0802824220186,,
+BLDG908122,4221 44TH AVE S,New duplex,2021,2,0,2,same_lot_review.csv,,,"Parcel 0702823410172 was split from 4217 44th Ave S (0702823410019) in 2021: vacant land 2021-2022, 2 units 2023. The house at 4217 remains (0702823410173, 1 unit in 2022)",Lot split; no dwelling removed
+BLDG858605,4416 32ND AVE S,New duplex,2021,2,1,1,wrecking permit,BLDG857686,0702823330066,,
+BLDG879189,4927 EWING AVE S,New triplex,2021,3,1,2,same_lot_review.csv,,,"Parcel 1702824230113: house, 1 unit, 2017-2021; triplex, 3 units, 2022-2023. No wrecking permit","A plumbing permit issued before the building permit (BLDG883464) covers lower-level work, so the house may have been rebuilt rather than demolished; 1 existing unit either way"
+BLDG909354,926 17TH AVE SE,New duplex,2021,2,1,1,wrecking permit,BLDG909330,2402924140142,,
+BLDG922354,1318 8TH ST SE,New triplex,2022,3,3,0,wrecking permit,BLDG909360,2402924130067,,
+BLDG905249,1700 5TH AVE N,New triplex,2022,3,0,3,same_lot_review.csv,,,Parcel 2102924310026: vacant land in every snapshot from 2017 to the permit year,
+BLDG955421,1911 32ND ST E,New triplex,2022,3,0,3,same_lot_review.csv,,,"Wrecking permit BLDG696062 issued 2018-05-09. Parcel 0102824230019: house 2017-2018, vacant land 2019-2022, triplex 2023","Removed before 2020-01-01, so not subtracted"
+BLDG926022,2406 MCNAIR AVE,New duplex,2022,2,0,2,same_lot_review.csv,,,Parcel 1702924110250 (2406 McNair Ave) is vacant land 2017-2020 and was split into vacant parcels 1702924110263-265 (2018-2021); the permit's parcel 1702924110268 is in no snapshot through 2023. No wrecking permit at 24xx McNair Ave,The permit records 2 dwelling units eliminated; the assessor shows no dwelling on the site
+BLDG923457,3641 28TH AVE S,New duplex,2022,2,2,0,wrecking permit,BLDG953571,0102824440037,,
+BLDG935777,502 37TH AVE NE,New triplex,2022,3,0,3,same_lot_review.csv,,,"500, 504 and 508 37th Ave NE (0202924210023-025, later 0202924210106-107) are vacant land in every snapshot 2017-2022",
+BLDG942920,506 37TH AVE NE,New triplex,2022,3,0,3,same_lot_review.csv,,,"500, 504 and 508 37th Ave NE (0202924210023-025, later 0202924210106-107) are vacant land in every snapshot 2017-2022",
+BLDG936919,5339 DREW AVE S,New triplex,2022,3,1,2,wrecking permit,BLDG952888,1702824330193,,
+BLDG957211,601 14TH AVE SE,New triplex,2022,3,1,2,wrecking permit,BLDG957226,2402924420098,,
+BLDG968345,930 17TH AVE SE,New duplex,2022,2,1,1,wrecking permit,BLDG952904,2402924140084,,
+BLDG958008,1311 GRAND ST NE,New duplex,2023,2,1,1,wrecking permit,BLDG931143,1502924140089,,
+BLDG988359,1338 LOGAN AVE N,New triplex,2023,3,0,3,same_lot_review.csv,,,Parcel 1602924340118: vacant land in every snapshot from 2017 to the permit year,
+BLDG951589,1709 ROLLINS AVE SE,New duplex,2023,2,0,2,same_lot_review.csv,,,"Parcel 2402924140143 first appears in 2023 (vacant land), split from 1717 Rollins Ave SE (2402924140082). The house at 1717 was wrecked 2023-02-09 (BLDG952931) and replaced by a new house on parcel 2402924140082 (BLDG974120, issued 2023-02-10)","The removed house was replaced by a new house on its own parcel, so it is not subtracted from the duplex"
+BLDG983663,1731 3RD ST NE,New triplex,2023,3,0,3,same_lot_review.csv,,,Parcel 1102924330162: vacant land in every snapshot from 2017 to the permit year,
+BLDG1001487,2513 29TH AVE S,New triplex,2023,3,1,2,wrecking permit,BLDG937360,3602924140133,,
+BLDG1019183,2818 40TH ST W,New duplex,2023,2,1,1,wrecking permit,BLDG1016838,0802824120160,,
+BLDG972052,3334 3RD AVE S,New triplex,2023,3,0,3,same_lot_review.csv,,,Parcel 0302824130130: vacant land in every snapshot from 2017 to the permit year,
+BLDG984346,3652 18TH AVE S,New triplex,2023,3,1,2,same_lot_review.csv,,,"Duplex at 3648 18th Ave S (parcel 0202824440040): 2 units in every snapshot through 2022; in 2023 replaced by vacant parcels 0202824440240 and 0202824440241, the sites of this triplex and BLDG984040. No wrecking permit at 364x-365x 18th Ave S",The duplex's 2 units are split 1 and 1 between the two triplexes
+BLDG984040,3654 18TH AVE S,New triplex,2023,3,1,2,same_lot_review.csv,,,"Duplex at 3648 18th Ave S (parcel 0202824440040): 2 units in every snapshot through 2022; in 2023 replaced by vacant parcels 0202824440240 and 0202824440241, the sites of this triplex and BLDG984346. No wrecking permit at 364x-365x 18th Ave S",The duplex's 2 units are split 1 and 1 between the two triplexes
+BLDG982512,4355 45TH AVE S,New duplex,2023,2,1,1,wrecking permit,BLDG980805,0702823410032,,
+BLDG994987,4425 45TH AVE S,New duplex,2023,2,1,1,wrecking permit,BLDG1006820,0702823440113,,
+BLDG983310,5747 26TH AVE S,New triplex,2023,3,1,2,wrecking permit,BLDG943118,2402824130194,,
+BLDG969264,614 11TH AVE SE,New triplex,2023,3,2,1,wrecking permit,BLDG980770,2402924240060,,
+BLDG983116,887 21ST AVE SE,New duplex,2023,2,1,1,wrecking permit,BLDG980555,1902923230009,,
+BLDG1088779,1046 25TH AVE SE,New duplex,2024,2,1,1,wrecking permit,BLDG1086854,1902923120026,,
+BLDG1075696,1057 23RD AVE SE,New duplex,2024,2,1,1,wrecking permit,BLDG1083456,1902923210040,,
+BLDG1080507,1061 23RD AVE SE,New duplex,2024,2,1,1,wrecking permit,BLDG1077524,1902923210219,,
+BLDG1051853,3711 COLGATE AVE,New duplex,2024,2,1,1,wrecking permit,BLDG870795,0802824320104,,
+BLDG1045848,4108 4TH AVE S,New duplex,2024,2,0,2,same_lot_review.csv,,,Parcel 1002824140118: vacant land in every snapshot from 2017 to the permit year,
+BLDG1053925,4200 UPTON AVE S,New duplex,2024,2,0,2,wrecking permit,BLDG979866,0802824420343,,
+BLDG1041906,4321 44TH AVE S,New duplex,2024,2,1,1,wrecking permit,BLDG1036073,0702823410135,,
+BLDG1117323,1051 20TH AVE SE,New duplex,2025,2,1,1,wrecking permit,BLDG1125424,1902923220011,,
+BLDG1134640,1343 LINCOLN ST NE,New duplex,2025,2,1,1,wrecking permit,BLDG1027745,1302924240107,,
+BLDG1123807,3657 LYNDALE AVE N,New duplex,2025,2,0,2,same_lot_review.csv,,,Parcel 0402924440190: vacant land in every snapshot from 2017 to the permit year,
+BLDG1102766,4047 31ST AVE S,New duplex,2025,2,1,1,wrecking permit,BLDG1061329,0702823230019,,
+BLDG1048689,4441 UPTON AVE S,New duplex,2025,2,2,0,wrecking permit,BLDG1048656,0802824430010,,
+BLDG1139687,4516 PORTLAND AVE,New duplex,2025,2,1,1,wrecking permit,BLDG1139069,1002824440175,,
+BLDG1128976,5047 EWING AVE S,New duplex,2025,2,1,1,wrecking permit,BLDG1128767,1702824320107,,
+BLDG1136524,5656 BLAISDELL AVE,New triplex,2025,3,1,2,wrecking permit,BLDG1139099,2202824240200,,
+BLDG1103845,869 19TH AVE SE,New duplex,2025,2,1,1,wrecking permit,BLDG1107220,1902923230098,,
+BLDG1153501,882 20TH AVE SE,New duplex,2025,2,1,1,wrecking permit,BLDG1153488,1902923230011,,
+BLDG1165650,1088 22ND AVE SE,New duplex,2026,2,1,1,wrecking permit,BLDG1147254,1902923210049,,
+BLDG1142774,2953 PIERCE ST NE,New duplex,2026,2,0,2,same_lot_review.csv,,,Parcel 0102924340183: vacant land in every snapshot from 2017 to the permit year,

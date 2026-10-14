@@ -19,6 +19,35 @@ ZONING_2023 = f"{ORG}/PrimaryZoningArchive/FeatureServer/0"
 # Esri World Geocoder (used only for permits whose record has no coordinates)
 GEOCODER = "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates"
 
+# Observation window: permits issued from SINCE through the day before UNTIL.
+# 2020-01-01 is the day the 2040 Plan's zoning changes took effect.
+SINCE = "2020-01-01"
+UNTIL = "2026-09-25"  # exclusive, so the window ends 2026-09-24
+
+
+def window(since=SINCE, until=UNTIL):
+    return f"issueDate >= DATE '{since}' AND issueDate < DATE '{until}'"
+
+
+# City Assessor yearly parcel snapshots: year -> (service, parcel-id field, id prefix, fields).
+# The id field and the address/units/type field names change between years.
+# 2017-2020 store the 13-digit parcel id as-is; 2021 onward prefix it with "p".
+_A1 = ["FORMATTED_ADDRESS", "TOTAL_UNITS", "BUILDINGUSE", "PROPERTY_TYPE"]
+_A2 = ["FORMATTED_ADDRESS", "TOTAL_UNITS", "BUILDINGUSE", "PRIMARY_PROP_TYPE"]
+_A3 = ["ADDRESSFORMATTED", "TOTALUNITS", "BUILDINGUSE", "PROPERTYTYPE"]
+ASSESSOR = {
+    2017: ("Assessors_Parcel_Data_2017", "APN", "", _A1),
+    2018: ("Assessors_Parcel_Data_2018", "APN", "", _A1),
+    2019: ("Assessors_Parcel_Data_2019", "APN", "", _A1),
+    2020: ("Assessors_Parcel_Data_2020", "APN", "", _A1),
+    2021: ("Assessors_Parcel_Data_2021", "PIN", "p", _A2),
+    2022: ("Assessors_Parcel_Data_2022", "PIN", "p", _A2),
+    2023: ("Assessing_Department_Parcel_Data_2023", "PIN", "p", _A2),
+    2024: ("Assessing_Department_Parcel_Data_2024", "PIN", "p", _A2),
+    2025: ("Assessing_Department_Parcel_Data_2025", "TAX_MAP_UFMT", "p", _A3),
+    2026: ("Assessing_Department_Parcel_Data_2026", "F_No_column_name_", "p", _A3),
+}
+
 # Permit fields pulled into the repo. Applicant name/address fields exist in the
 # source layer but are deliberately NOT pulled (personal data, not needed).
 #
@@ -112,15 +141,15 @@ def count(layer_url, where):
     return _post(layer_url + "/query", {"where": where, "returnCountOnly": "true", "f": "json"})["count"]
 
 
-def query_all(layer_url, where, out_fields="*", page=2000, return_geometry=False):
-    """Return every matching feature's attributes, paging by OBJECTID order."""
+def query_all(layer_url, where, out_fields="*", page=2000, return_geometry=False, order_by="OBJECTID"):
+    """Return every matching feature's attributes, paging in object-id order."""
     rows, offset = [], 0
     while True:
         payload = _post(layer_url + "/query", {
             "where": where,
             "outFields": out_fields if isinstance(out_fields, str) else ",".join(out_fields),
             "returnGeometry": "true" if return_geometry else "false",
-            "orderByFields": "OBJECTID",
+            "orderByFields": order_by,
             "resultOffset": offset,
             "resultRecordCount": page,
             "f": "json",

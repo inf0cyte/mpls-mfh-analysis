@@ -1,7 +1,7 @@
 category,permits,units_added,permits_newly_allowed,units_newly_allowed
-New duplex,82,164,40,80
+New duplex,92,184,47,94
 New triplex,28,84,25,75
 SFD to duplex,42,42,14,14
-Duplex to triplex,20,20,18,18
+Duplex to triplex,23,23,20,20
 SFD to triplex,1,2,1,2
-Total,173,312,98,189
+Total,186,335,107,205
