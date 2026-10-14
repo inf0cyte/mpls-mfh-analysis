@@ -1,0 +1,127 @@
+{
+  "pulled_at_utc": "2026-10-14T00:18:35Z",
+  "parcels_requested": 634,
+  "snapshots": {
+    "2017": {
+      "service": "https://services.arcgis.com/afSMGVsC7QlRK1kZ/arcgis/rest/services/Assessors_Parcel_Data_2017/FeatureServer/0",
+      "id_field": "APN",
+      "id_prefix": "",
+      "fields": [
+        "FORMATTED_ADDRESS",
+        "TOTAL_UNITS",
+        "BUILDINGUSE",
+        "PROPERTY_TYPE"
+      ],
+      "records": 603
+    },
+    "2018": {
+      "service": "https://services.arcgis.com/afSMGVsC7QlRK1kZ/arcgis/rest/services/Assessors_Parcel_Data_2018/FeatureServer/0",
+      "id_field": "APN",
+      "id_prefix": "",
+      "fields": [
+        "FORMATTED_ADDRESS",
+        "TOTAL_UNITS",
+        "BUILDINGUSE",
+        "PROPERTY_TYPE"
+      ],
+      "records": 609
+    },
+    "2019": {
+      "service": "https://services.arcgis.com/afSMGVsC7QlRK1kZ/arcgis/rest/services/Assessors_Parcel_Data_2019/FeatureServer/0",
+      "id_field": "APN",
+      "id_prefix": "",
+      "fields": [
+        "FORMATTED_ADDRESS",
+        "TOTAL_UNITS",
+        "BUILDINGUSE",
+        "PROPERTY_TYPE"
+      ],
+      "records": 609
+    },
+    "2020": {
+      "service": "https://services.arcgis.com/afSMGVsC7QlRK1kZ/arcgis/rest/services/Assessors_Parcel_Data_2020/FeatureServer/0",
+      "id_field": "APN",
+      "id_prefix": "",
+      "fields": [
+        "FORMATTED_ADDRESS",
+        "TOTAL_UNITS",
+        "BUILDINGUSE",
+        "PROPERTY_TYPE"
+      ],
+      "records": 603
+    },
+    "2021": {
+      "service": "https://services.arcgis.com/afSMGVsC7QlRK1kZ/arcgis/rest/services/Assessors_Parcel_Data_2021/FeatureServer/0",
+      "id_field": "PIN",
+      "id_prefix": "p",
+      "fields": [
+        "FORMATTED_ADDRESS",
+        "TOTAL_UNITS",
+        "BUILDINGUSE",
+        "PRIMARY_PROP_TYPE"
+      ],
+      "records": 612
+    },
+    "2022": {
+      "service": "https://services.arcgis.com/afSMGVsC7QlRK1kZ/arcgis/rest/services/Assessors_Parcel_Data_2022/FeatureServer/0",
+      "id_field": "PIN",
+      "id_prefix": "p",
+      "fields": [
+        "FORMATTED_ADDRESS",
+        "TOTAL_UNITS",
+        "BUILDINGUSE",
+        "PRIMARY_PROP_TYPE"
+      ],
+      "records": 605
+    },
+    "2023": {
+      "service": "https://services.arcgis.com/afSMGVsC7QlRK1kZ/arcgis/rest/services/Assessing_Department_Parcel_Data_2023/FeatureServer/0",
+      "id_field": "PIN",
+      "id_prefix": "p",
+      "fields": [
+        "FORMATTED_ADDRESS",
+        "TOTAL_UNITS",
+        "BUILDINGUSE",
+        "PRIMARY_PROP_TYPE"
+      ],
+      "records": 602
+    },
+    "2024": {
+      "service": "https://services.arcgis.com/afSMGVsC7QlRK1kZ/arcgis/rest/services/Assessing_Department_Parcel_Data_2024/FeatureServer/0",
+      "id_field": "PIN",
+      "id_prefix": "p",
+      "fields": [
+        "FORMATTED_ADDRESS",
+        "TOTAL_UNITS",
+        "BUILDINGUSE",
+        "PRIMARY_PROP_TYPE"
+      ],
+      "records": 603
+    },
+    "2025": {
+      "service": "https://services.arcgis.com/afSMGVsC7QlRK1kZ/arcgis/rest/services/Assessing_Department_Parcel_Data_2025/FeatureServer/0",
+      "id_field": "TAX_MAP_UFMT",
+      "id_prefix": "p",
+      "fields": [
+        "ADDRESSFORMATTED",
+        "TOTALUNITS",
+        "BUILDINGUSE",
+        "PROPERTYTYPE"
+      ],
+      "records": 623
+    },
+    "2026": {
+      "service": "https://services.arcgis.com/afSMGVsC7QlRK1kZ/arcgis/rest/services/Assessing_Department_Parcel_Data_2026/FeatureServer/0",
+      "id_field": "F_No_column_name_",
+      "id_prefix": "p",
+      "fields": [
+        "ADDRESSFORMATTED",
+        "TOTALUNITS",
+        "BUILDINGUSE",
+        "PROPERTYTYPE"
+      ],
+      "records": 623
+    }
+  },
+  "parcels_found": 628
+}

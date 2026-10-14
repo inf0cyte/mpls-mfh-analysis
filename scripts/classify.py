@@ -45,11 +45,24 @@ def load(name):
 
 
 def dedupe(rows):
-    """Source layer has occasional duplicate rows per permit; keep lowest OBJECTID."""
+    """Source layer has occasional duplicate rows per permit; keep lowest OBJECTID.
+
+    Duplicate rows agree on the fields the selection rules use, but can carry different
+    coordinates and parcel ids (APN). Code that needs those uses rows_by_permit() instead.
+    """
     out = {}
     for r in sorted(rows, key=lambda r: r["OBJECTID"]):
         out.setdefault(r["permitNumber"], r)
     return out
+
+
+def rows_by_permit(*names):
+    """Every raw row from the named pulls, grouped by permit number."""
+    out = {}
+    for name in names:
+        for r in load(name):
+            out.setdefault(r["permitNumber"], {})[r["OBJECTID"]] = r
+    return {p: [d[k] for k in sorted(d)] for p, d in out.items()}
 
 
 def year(r):

@@ -1,0 +1,405 @@
+permitNumber,decision,units_added,units_removed,adus,note
+BLDG811555,not counted,0,0,0,Administrative records update to single-family; no work
+BLDG809267,removed,0,1,0,Two condo units combined into one
+BLDG808553,added,1,0,0,Basement converted to a 5th unit
+BLDG803150,added,1,0,0,No description in source data; counted as the unit fields record it
+BLDG809819,not counted,0,0,0,Office converted to a boarding house; rooming units are not dwelling units
+BLDG817959,not counted,0,0,0,Renovation of existing upper-level units; no unit added
+BLDG806042,not counted,0,0,0,"26 shared-bath rooming units rebuilt as 16 apartments; rooming units are not dwelling units, so left out of both sides"
+BLDG806047,not counted,0,0,0,"28 shared-bath rooming units rebuilt as 18 apartments; rooming units are not dwelling units, so left out of both sides"
+BLDG806050,not counted,0,0,0,"26 shared-bath rooming units rebuilt as 16 apartments; rooming units are not dwelling units, so left out of both sides"
+BLDG805913,not counted,0,0,0,"26 shared-bath rooming units rebuilt as 16 apartments; rooming units are not dwelling units, so left out of both sides"
+BLDG818068,removed,0,1,0,Single-family house demolished to its foundation under a remodel permit (rebuilt under BLDG834214)
+BLDG811958,added,1,0,0,Former grocery space converted to a third dwelling unit in a mixed-use building
+BLDG822316,not counted,0,0,0,Status Cancelled or Expired
+BLDG828967,not counted,0,0,0,Status Cancelled or Expired
+BLDG827423,added,1,0,0,Condo unit split to create a new unit
+BLDG823848,not counted,0,0,0,Status Cancelled or Expired
+BLDG830092,added,10,0,0,10 new units added to an existing apartment complex
+BLDG817394,added,6,0,0,Restaurant space converted to 6 units
+BLDG834214,added,1,0,0,No description in source data; counted as the unit fields record it; same address as BLDG818068
+BLDG835824,added,1,0,0,Office space converted to an apartment
+BLDG841398,not counted,0,0,0,Records correction establishing the structure as single-family; no work
+BLDG831442,added,44,0,0,New 44-unit apartment building permitted as a remodel
+BLDG827287,added,188,0,0,Office/warehouse converted to 188 apartments
+BLDG840613,not counted,0,0,0,Records change returning an office floor to its original dwelling use; no work
+BLDG839954,adu,0,0,1,Basement ADU in a single-family house
+BLDG844243,added,6,0,0,Storage converted to 6 dwelling units
+BLDG851649,added,2,0,0,Common space converted to 2 units
+BLDG839579,not counted,0,0,0,Finish-out of a unit in an existing condo building
+BLDG843038,not counted,0,0,0,"Two shared-bath rooming units converted to dwelling units; rooming units are not dwelling units, so left out of both sides"
+BLDG842011,removed,0,1,0,Second-floor apartment converted to office
+BLDG837052,added,1,0,0,Legalizes one existing basement unit and builds one new unit
+BLDG827429,not counted,0,0,0,Revision correcting a unit count; description does not state units added
+BLDG844820,adu,0,0,1,Garage with ADU above
+BLDG837445,added,201,0,0,No description in source data; counted as the unit fields record it
+BLDG850108,not counted,0,0,0,Status Cancelled or Expired
+BLDG846477,not counted,0,0,0,Certificate of occupancy for a unit built under an earlier permit
+BLDG858218,not counted,0,0,0,Status Cancelled or Expired
+BLDG860248,removed,0,1,0,Apartment converted to a hair salon
+BLDG841541,added,27,0,0,Hotel converted to 27 dwelling units
+BLDG865602,added,1,0,0,Detached garage converted to a new dwelling after a lot split
+BLDG873363,not counted,0,0,0,Reconversion to a duplex that was a duplex until 2019 (see conversion_classification.csv)
+BLDG878368,added,1,0,0,Office space converted to an 8th unit
+BLDG871225,added,6,0,0,First-floor office converted to 6 apartments
+BLDG850390,adu,0,0,1,ADU above a detached garage
+BLDG873035,added,40,0,0,40-unit addition to an existing apartment building
+BLDG865167,added,3,0,0,Office space converted to dwelling units
+BLDG860183,added,3,0,0,Historic mansion remodeled into 3 dwelling units
+BLDG881140,not counted,0,0,0,Status Cancelled or Expired
+BLDG873351,added,1,0,0,Basement finished as an apartment
+BLDG878970,not counted,0,0,0,Legalizes an existing duplex
+BLDG844110,added,2,0,0,Two apartments added in a basement
+BLDG879071,added,1,0,0,No description in source data; counted as the unit fields record it
+BLDG871611,added,1,0,0,Common area converted to a 16th unit
+BLDG875918,not counted,0,0,0,Rehab of an existing 4-unit building; no unit added
+BLDG864082,added,1,0,0,Duplex converted to office plus three apartments (net +1)
+BLDG890322,not counted,0,0,0,Legalizes an existing 5th unit; no work
+BLDG870244,added,1,0,0,New basement apartment
+BLDG905894,added,1,0,0,Commercial property converted to a single-family house
+BLDG880236,added,34,0,0,Church converted to apartments
+BLDG890976,added,49,0,0,Historic building converted to 49 apartments
+BLDG813161,not counted,0,0,0,Status Cancelled or Expired
+BLDG842434,added,1,0,0,"No description in source data; counted as the unit fields record it (2 new, 1 eliminated)"
+BLDG907533,added,2,0,0,Third unit added on each of two condo floors
+BLDG897610,not counted,0,0,0,Duplex living space expanded; no unit added
+BLDG903456,not counted,0,0,0,Duplex reclassified to another code occupancy; unit count unchanged
+BLDG901151,adu,0,0,1,Attic converted to an ADU
+BLDG873534,added,1,0,0,Church converted to a single-family house
+BLDG913999,not counted,0,0,0,Records correction; the building was recorded as single-family
+BLDG912375,not counted,0,0,0,"Companion permit to BLDG833069, which is counted"
+BLDG897831,added,1,0,0,Fitness space converted to an apartment
+BLDG875824,not counted,0,0,0,Records correction from 2 units to 1; no work
+BLDG916646,not counted,0,0,0,Legalizes an earlier conversion to single-family
+BLDG913727,added,23,0,0,Factory/warehouse converted to 23 apartments
+BLDG890159,added,172,0,0,Office building converted to 172 apartments
+BLDG917663,removed,0,1,0,Two condo units combined into one
+BLDG926140,not counted,0,0,0,Legalizes an earlier conversion to single-family; no work
+BLDG927352,not counted,0,0,0,Finish-out of a unit in an existing condo tower
+BLDG855246,added,42,0,0,Commercial building converted to 42 units
+BLDG929971,removed,0,1,0,"Boilerplate description only; counted as the unit fields record it (1 new, 2 eliminated)"
+BLDG909253,added,84,0,0,Office building converted to 84 apartments
+BLDG926678,not counted,0,0,0,Park dedication fee record for BLDG890159; duplicates its 172 units
+BLDG927356,not counted,0,0,0,Finish-out of a unit in an existing condo tower
+BLDG929735,not counted,0,0,0,Single-family remodel; unit count unchanged
+BLDG903082,not counted,0,0,0,Status Cancelled or Expired
+BLDG915670,added,2,0,0,Duplex converted to a 4-unit building
+BLDG860541,not counted,0,0,0,Status Cancelled or Expired
+BLDG931904,added,6,0,0,Part of a church converted to apartments
+BLDG927357,not counted,0,0,0,Finish-out of a unit in an existing condo tower
+BLDG947889,added,1,0,0,Rental office converted to a 34th unit
+BLDG927548,added,13,0,0,Remodel and addition creating a 13-unit apartment building
+BLDG949638,not counted,0,0,0,Finish-out of a unit in an existing condo tower
+BLDG943770,adu,0,0,1,Detached ADU
+BLDG896391,adu,0,0,1,Basement ADU in a single-family house
+BLDG945450,added,68,0,0,Warehouse converted to 68 apartments
+BLDG943851,added,258,0,0,Warehouse converted to 258 apartments
+BLDG941624,added,1,0,0,26th unit added in a basement
+BLDG949518,not counted,0,0,0,Status Cancelled or Expired
+BLDG957628,added,7,0,0,Building rehabbed into 7 condo units
+BLDG968132,added,21,0,0,Part of a building converted to apartments
+BLDG958979,added,30,0,0,Interior remodel into 30 dwelling units
+BLDG960488,added,21,0,0,Church converted to 21 units
+BLDG971587,not counted,0,0,0,Egress window in an existing unit
+BLDG969069,not counted,0,0,0,Remodel of a 5-unit building; description does not state a unit added
+BLDG973568,not counted,0,0,0,Finish-out of a unit in an existing condo tower
+BLDG962736,added,1,0,0,Building remodeled to add a residential unit
+BLDG975330,added,1,0,0,Dwelling unit added to an apartment complex
+BLDG982309,not counted,0,0,0,Shell-space finish-out of a condo unit in an existing tower
+BLDG976730,added,39,0,0,Motel converted to 39 units
+BLDG961706,added,216,0,0,Office building converted to 216 dwelling units
+BLDG962582,added,45,0,0,Hotel converted to 45 apartments
+BLDG989261,not counted,0,0,0,Legalizes a completed unpermitted conversion
+BLDG989128,not counted,0,0,0,Duplex remodel; no unit added
+BLDG998652,added,1,0,0,Retail space remodeled to add a dwelling unit
+BLDG905854,not counted,0,0,0,Status Cancelled or Expired
+BLDG990040,added,2,0,0,Two floors converted to 2 residential units
+BLDG995753,added,4,0,0,Office space reverted to 4 apartments
+BLDG1016010,not counted,0,0,0,Legalizes a conversion done without a permit
+BLDG1011613,not counted,0,0,0,Duplex remodel; description does not state a unit removed
+BLDG1020197,not counted,0,0,0,Status Cancelled or Expired
+BLDG1030379,added,27,0,0,Office building converted to 27 dwelling units
+BLDG1001305,not counted,0,0,0,Brings an existing unlisted unit to code
+BLDG1016192,not counted,0,0,0,Rooming unit converted to a dwelling unit; rooming units are not dwelling units
+BLDG1039028,removed,0,1,0,Single-family house converted to an assisted living facility
+BLDG1043922,added,1,0,0,4th unit added in a basement
+BLDG982540,added,1,0,0,Attic finished for a 4th unit in a triplex
+BLDG1049624,removed,0,1,0,Two units combined; 5-unit building becomes 4
+BLDG1025811,added,2,0,0,Basement unit added and garage converted to a unit
+BLDG939184,not counted,0,0,0,Status Cancelled or Expired
+BLDG1072055,not counted,0,0,0,SAC audit record only
+BLDG1044137,not counted,0,0,0,Rebuild of an existing duplex; no unit added
+BLDG1030884,not counted,0,0,0,Status Cancelled or Expired
+BLDG966858,added,84,0,0,Buildings remodeled for 84 new dwelling units
+BLDG1034068,added,59,0,0,Office building converted to 59 units
+BLDG1081891,removed,0,2,0,Three efficiency units combined into one
+BLDG1076987,added,9,0,0,"Two floors converted to 24 units, replacing 15 (net +9)"
+BLDG1071174,added,1,0,0,Commercial space converted to a single-family house
+BLDG1083301,not counted,0,0,0,Legalizes an existing conversion to single-family; no wrecking done
+BLDG1066513,added,3,0,0,Commercial space converted to 3 dwelling units
+BLDG1050984,not counted,0,0,0,Legalizes an existing 12th unit
+BLDG1084154,added,6,0,0,Space converted to 6 apartments
+BLDG1093267,added,1,0,0,New efficiency unit in an existing 3-unit building
+BLDG1100539,added,1,0,0,Basement unit added; 3-unit building becomes 4
+BLDG1022300,not counted,0,0,0,Legalizes 3 existing units
+BLDG1116465,removed,0,1,0,Two dwelling units combined
+BLDG1113929,not counted,0,0,0,Remodel of existing units; description does not state a unit removed
+BLDG1082800,not counted,0,0,0,Legalizes an existing 3rd unit
+BLDG1084533,not counted,0,0,0,Existing basement ADU re-designated as the second duplex unit
+BLDG1086645,added,3,0,0,3 dwelling units added in a basement
+BLDG1134069,not counted,0,0,0,Administrative permit documenting an earlier conversion
+BLDG1124518,added,72,0,0,8-story addition to an apartment building
+BLDG1151371,added,1,0,0,Commercial building remodeled to a single-family house
+BLDG1160987,not counted,0,0,0,Finish-out of a unit in an existing condo tower
+BLDG1160991,not counted,0,0,0,Finish-out of a unit in an existing condo tower
+BLDG1088066,removed,0,1,0,Single-family house converted to a child day care
+BLDG1156691,removed,0,3,0,Building converted to a rehabilitation center (3 units recorded eliminated)
+BLDG1166715,not counted,0,0,0,No work; records change back to two-family
+BLDG1164805,added,42,0,0,Design center converted to 42 units
+BLDG1184730,added,7,0,0,Commercial space converted to 7 units
+BLDG1187412,added,5,0,0,Building converted to 5 apartments
+BLDG811703,not counted,0,0,0,Garage office; description states it is not an ADU
+BLDG811127,not counted,0,0,0,Status Cancelled or Expired
+BLDG808788,adu,0,0,1,Garage with ADU above
+BLDG813774,not counted,0,0,0,Flooring product name contains 'ADU'
+BLDG814192,not counted,0,0,0,Basement finish; description states it is not an ADU
+BLDG810907,adu,0,0,1,Basement converted to an ADU
+BLDG803461,adu,0,0,1,New garage with ADU
+BLDG810876,not counted,0,0,0,Attic space not permitted as an ADU
+BLDG819510,not counted,0,0,0,Status Cancelled or Expired
+BLDG805955,not counted,0,0,0,Adult day care; 'ADU' matched inside 'ADULT'
+BLDG804486,adu,0,0,1,Basement ADU
+BLDG819941,not counted,0,0,0,Adult day care; 'ADU' matched inside 'ADULT'
+BLDG825138,not counted,0,0,0,"Companion permit to BLDG804486, which is counted"
+BLDG823312,not counted,0,0,0,Remodel of a duplex unit; existing ADU unchanged
+BLDG810256,adu,0,0,1,Detached garage remodeled into an ADU
+BLDG750717,adu,0,0,1,Garage with attic ADU
+BLDG827899,adu,0,0,1,Garage with ADU above
+BLDG804038,adu,0,0,1,Garage with ADU
+BLDG827499,not counted,0,0,0,Basement remodel; not an ADU
+BLDG819761,not counted,0,0,0,Adult day care; 'ADU' matched inside 'ADULT'
+BLDG833582,not counted,0,0,0,Remodel; description states no ADU
+BLDG836579,not counted,0,0,0,Adult day care; 'ADU' matched inside 'ADULT'
+BLDG825126,not counted,0,0,0,Garage; description states it is not an ADU
+BLDG835769,not counted,0,0,0,Garage; description states it is not an ADU
+BLDG798682,adu,0,0,1,Garage with ADU above
+BLDG829514,adu,0,0,1,Garage with detached ADU
+BLDG838910,not counted,0,0,0,Removes an internal ADU; ADU removals are not tracked
+BLDG807270,adu,0,0,1,Attic ADU
+BLDG833035,adu,0,0,1,Basement ADU
+BLDG795089,not counted,0,0,0,Adult day care; 'ADU' matched inside 'ADULT'
+BLDG841765,not counted,0,0,0,Adult day care; 'ADU' matched inside 'ADULT'
+BLDG841371,not counted,0,0,0,Room above garage; description states it is not an ADU
+BLDG846962,not counted,0,0,0,Attic bathroom; not an ADU
+BLDG847578,not counted,0,0,0,Garage; description states it is not an ADU
+BLDG848421,not counted,0,0,0,Garage; description states it is not an ADU
+BLDG845319,adu,0,0,1,New basement kitchen; basement recognized as an ADU
+BLDG847923,not counted,0,0,0,Garage; description states it is not an ADU
+BLDG851157,not counted,0,0,0,Garage; description states it is not an ADU
+BLDG852513,not counted,0,0,0,Garage; description states it is not an ADU
+BLDG850293,adu,0,0,1,Garage with ADU
+BLDG838515,adu,0,0,1,Garage with ADU above
+BLDG854196,not counted,0,0,0,Adult day care; 'ADU' matched inside 'ADULT'
+BLDG829351,not counted,0,0,0,Garage; description states it is not an ADU
+BLDG811415,not counted,0,0,0,Adult day care; 'ADU' matched inside 'ADULT'
+BLDG867206,adu,0,0,1,Basement ADU in a duplex
+BLDG881665,not counted,0,0,0,Porch enclosure; companion to earlier permits
+BLDG873234,not counted,0,0,0,Addition; description states no ADU
+BLDG877843,not counted,0,0,0,Minor remodel; not an ADU
+BLDG882328,not counted,0,0,0,Garage; description states it is not an ADU
+BLDG882336,not counted,0,0,0,Garage; description states it is not an ADU
+BLDG887178,not counted,0,0,0,Garage; description states it is not an ADU
+BLDG883339,not counted,0,0,0,Adult day care; 'ADU' matched inside 'ADULT'
+BLDG885993,not counted,0,0,0,Garage; description states it is not an ADU
+BLDG894977,not counted,0,0,0,Roof replacement; 'ADU' matched inside 'ADULT'
+BLDG886919,not counted,0,0,0,Garage; description states it is not an ADU
+BLDG879829,not counted,0,0,0,Adult day care; 'ADU' matched inside 'ADULT'
+BLDG882666,adu,0,0,1,Basement ADU in a single-family house
+BLDG895676,not counted,0,0,0,Garage; description states it is not an ADU
+BLDG880551,adu,0,0,1,Detached ADU
+BLDG901392,adu,0,0,1,Detached ADU
+BLDG904451,not counted,0,0,0,Garage; no ADU permitted
+BLDG901395,adu,0,0,1,Foundation and modular detached ADU (completed under BLDG912429)
+BLDG899952,not counted,0,0,0,Entry door for the ADU permitted under BLDG810907
+BLDG890782,not counted,0,0,0,Adult day care; 'ADU' matched inside 'ADULT'
+BLDG898877,not counted,0,0,0,Garage; description states it is not an ADU
+BLDG907229,not counted,0,0,0,Adult day care; 'ADU' matched inside 'ADULT'
+BLDG894236,not counted,0,0,0,Garage addition with a shop; description does not establish an ADU
+BLDG907234,not counted,0,0,0,Insulation only; companion to another permit
+BLDG907085,not counted,0,0,0,Adult day care; 'ADU' matched inside 'ADULT'
+BLDG912100,not counted,0,0,0,Remodel within one unit; no ADU
+BLDG912680,not counted,0,0,0,Garage; description states it is not an ADU
+BLDG892558,adu,0,0,1,Internal ADU
+BLDG911606,not counted,0,0,0,Adult day care; 'ADU' matched inside 'ADULT'
+BLDG915410,adu,0,0,1,Garage with ADU above
+BLDG886139,not counted,0,0,0,Basement finish; not an ADU
+BLDG878703,not counted,0,0,0,Adult day care; 'ADU' matched inside 'ADULT'
+BLDG924641,not counted,0,0,0,Adult day care; 'ADU' matched inside 'ADULT'
+BLDG912429,not counted,0,0,0,Second permit for the ADU counted under BLDG901395
+BLDG927176,not counted,0,0,0,Basement finish; not an ADU
+BLDG930373,not counted,0,0,0,Garage drywall; no ADU
+BLDG926776,not counted,0,0,0,Re-permit for a contractor change on earlier work
+BLDG907781,not counted,0,0,0,Adult day care; 'ADU' matched inside 'ADULT'
+BLDG924409,adu,0,0,1,Internal basement ADU
+BLDG934091,not counted,0,0,0,Basement remodel; not an ADU
+BLDG934565,not counted,0,0,0,Adult day care; 'ADU' matched inside 'ADULT'
+BLDG937216,not counted,0,0,0,Remodel of an existing ADU
+BLDG926718,not counted,0,0,0,Status Cancelled or Expired
+BLDG931757,adu,0,0,1,ADU built on an existing garage
+BLDG908097,not counted,0,0,0,Garage; description states it is not an ADU
+BLDG929302,not counted,0,0,0,Adult day care; 'ADU' matched inside 'ADULT'
+BLDG927284,adu,0,0,1,Garage with ADU above
+BLDG939797,not counted,0,0,0,Basement bedroom; not an ADU
+BLDG929301,not counted,0,0,0,Adult day care; 'ADU' matched inside 'ADULT'
+BLDG944197,not counted,0,0,0,Adult day care; 'ADU' matched inside 'ADULT'
+BLDG946844,adu,0,0,1,Existing garage finished as an ADU
+BLDG944246,adu,0,0,1,Garage with ADU
+BLDG951631,not counted,0,0,0,Garage; description states it is not an ADU
+BLDG947256,adu,0,0,1,Garage with ADU above
+BLDG949770,adu,0,0,1,Detached ADU
+BLDG960238,not counted,0,0,0,Status Cancelled or Expired
+BLDG950850,adu,0,0,1,ADU
+BLDG963600,adu,0,0,1,Detached ADU
+BLDG960225,not counted,0,0,0,Legalizes an existing detached ADU
+BLDG969966,not counted,0,0,0,Basement bedroom; not an ADU
+BLDG972130,not counted,0,0,0,Adult changing station; 'ADU' matched inside 'ADULT'
+BLDG972613,not counted,0,0,0,Adult day care; 'ADU' matched inside 'ADULT'
+BLDG957091,not counted,0,0,0,Adult day care; 'ADU' matched inside 'ADULT'
+BLDG974046,not counted,0,0,0,Adult day care; 'ADU' matched inside 'ADULT'
+BLDG984925,not counted,0,0,0,Garage; description states it is not an ADU
+BLDG958293,adu,0,0,1,Garage with ADU above
+BLDG993965,not counted,0,0,0,Status Cancelled or Expired
+BLDG989270,not counted,0,0,0,Status Cancelled or Expired
+BLDG993240,not counted,0,0,0,Garage; description states it is not an ADU
+BLDG997499,not counted,0,0,0,Garage; description states it is not an ADU
+BLDG1001863,not counted,0,0,0,Garage; description states it is not an ADU
+BLDG909285,adu,0,0,1,Garage with ADU above
+BLDG989350,not counted,0,0,0,Status Cancelled or Expired
+BLDG986921,not counted,0,0,0,Adult day care; 'ADU' matched inside 'ADULT'
+BLDG1007450,not counted,0,0,0,Garage; description states it is not an ADU
+BLDG965784,not counted,0,0,0,Adult day care; 'ADU' matched inside 'ADULT'
+BLDG1007067,adu,0,0,1,Carriage house converted to an ADU
+BLDG1011368,not counted,0,0,0,Existing guest suite recognized as an ADU; no construction
+BLDG1013593,not counted,0,0,0,Adult day care; 'ADU' matched inside 'ADULT'
+BLDG998703,adu,0,0,1,Attached ADU addition
+BLDG1009514,not counted,0,0,0,Dormers; attic not an ADU
+BLDG998998,not counted,0,0,0,Adult day care; 'ADU' matched inside 'ADULT'
+BLDG1018609,not counted,0,0,0,Re-roof of a house and an existing ADU
+BLDG961042,not counted,0,0,0,Basement finish; not a new dwelling
+BLDG995989,adu,0,0,1,Attached ADU addition
+BLDG998099,adu,0,0,1,Garage with ADU above
+BLDG991918,not counted,0,0,0,Status Cancelled or Expired
+BLDG1021859,not counted,0,0,0,Adult day care; 'ADU' matched inside 'ADULT'
+BLDG1024487,not counted,0,0,0,Status Cancelled or Expired
+BLDG1016112,not counted,0,0,0,Adult day care; 'ADU' matched inside 'ADULT'
+BLDG988563,adu,0,0,1,Carriage house over garage remodeled as an ADU
+BLDG876892,not counted,0,0,0,Status Cancelled or Expired
+BLDG1022742,not counted,0,0,0,Status Cancelled or Expired
+BLDG1034343,not counted,0,0,0,Insulation; not an ADU
+BLDG992446,not counted,0,0,0,Status Cancelled or Expired
+BLDG1037691,not counted,0,0,0,Adult day care; 'ADU' matched inside 'ADULT'
+BLDG1024981,not counted,0,0,0,Adult day care; 'ADU' matched inside 'ADULT'
+BLDG1050957,not counted,0,0,0,Entry platform for an existing ADU
+BLDG938521,not counted,0,0,0,Adult day care; 'ADU' matched inside 'ADULT'
+BLDG1048257,adu,0,0,1,Basement ADU
+BLDG1031585,not counted,0,0,0,Adult day care; 'ADU' matched inside 'ADULT'
+BLDG1049202,adu,0,0,1,Garage with ADU above
+BLDG1052704,adu,0,0,1,Basement ADU
+BLDG1046544,not counted,0,0,0,Adult day care; 'ADU' matched inside 'ADULT'
+BLDG1052667,not counted,0,0,0,Existing garage apartment established as an ADU; no construction
+BLDG1065637,adu,0,0,1,Garage with apartment (ADU) above
+BLDG1067473,not counted,0,0,0,Adult day care; 'ADU' matched inside 'ADULT'
+BLDG1069215,not counted,0,0,0,Adult day care; 'ADU' matched inside 'ADULT'
+BLDG1065798,adu,0,0,1,Two garages converted to a detached ADU
+BLDG1081770,not counted,0,0,0,Garage; description states it is not an ADU
+BLDG1081399,not counted,0,0,0,Garage; description states it is not an ADU
+BLDG1083922,not counted,0,0,0,Re-roof of a house and an existing ADU
+BLDG1072136,not counted,0,0,0,Adult day care; 'ADU' matched inside 'ADULT'
+BLDG1084816,not counted,0,0,0,Garage; description states it is not an ADU
+BLDG1078539,not counted,0,0,0,Garage; description states it is not an ADU
+BLDG1078429,adu,0,0,1,Garage with ADU above
+BLDG1031983,not counted,0,0,0,Licensing of an existing basement ADU
+BLDG1064565,adu,0,0,1,Attached garage converted to an ADU
+BLDG1087192,adu,0,0,1,Garage with ADU above
+BLDG1066033,not counted,0,0,0,Permit for work already done (existing basement ADU)
+BLDG1085356,not counted,0,0,0,Adult day care; 'ADU' matched inside 'ADULT'
+BLDG1098018,not counted,0,0,0,Adult day care; 'ADU' matched inside 'ADULT'
+BLDG1082634,not counted,0,0,0,Day care; 'ADU' matched inside 'ADULT'
+BLDG1099315,not counted,0,0,0,Completes the ADU counted under BLDG880551
+BLDG1098210,not counted,0,0,0,Adult day care; 'ADU' matched inside 'ADULT'
+BLDG1066431,adu,0,0,1,Studio above garage converted to an ADU
+BLDG1071353,not counted,0,0,0,Adult day care; 'ADU' matched inside 'ADULT'
+BLDG1114601,adu,0,0,1,ADU over detached garage
+BLDG1121325,not counted,0,0,0,Garage; description states it is not an ADU
+BLDG1108638,not counted,0,0,0,Garage; description states it is not an ADU
+BLDG1124600,not counted,0,0,0,Garage; description states it is not an ADU
+BLDG1122355,adu,0,0,1,Basement finished as an internal ADU
+BLDG1120520,not counted,0,0,0,Garage; description states it is not an ADU
+BLDG1134196,not counted,0,0,0,Adult day care; 'ADU' matched inside 'ADULT'
+BLDG1127747,adu,0,0,1,Basement remodeled as an ADU
+BLDG1138228,not counted,0,0,0,Garage; description states it is not an ADU
+BLDG1140999,adu,0,0,1,ADU created above a garage
+BLDG1144097,not counted,0,0,0,Garage; description states it is not an ADU
+BLDG1138473,adu,0,0,1,Garage with ADU above
+BLDG1085310,adu,0,0,1,Garage with ADU above
+BLDG1139708,not counted,0,0,0,Water damage repair of an existing ADU
+BLDG1114889,adu,0,0,1,Front addition converted to an ADU
+BLDG1127845,adu,0,0,1,Garage with ADU above
+BLDG1149253,not counted,0,0,0,Recognizes a basement ADU finished under an earlier permit
+BLDG1142530,not counted,0,0,0,Adult day care; 'ADU' matched inside 'ADULT'
+BLDG1116273,not counted,0,0,0,Adult day care; 'ADU' matched inside 'ADULT'
+BLDG1155637,not counted,0,0,0,Adult day care; 'ADU' matched inside 'ADULT'
+BLDG1118738,not counted,0,0,0,Adult day care; 'ADU' matched inside 'ADULT'
+BLDG1146259,not counted,0,0,0,Adult day care; 'ADU' matched inside 'ADULT'
+BLDG1144408,not counted,0,0,0,Garage rec room; description states it is not an ADU
+BLDG1148261,adu,0,0,1,Basement ADU
+BLDG1149007,adu,0,0,1,Detached manufactured-home ADU
+BLDG1163129,not counted,0,0,0,Egress window; ADU counted under BLDG1148261
+BLDG1151444,not counted,0,0,0,Adult day care; 'ADU' matched inside 'ADULT'
+BLDG1165893,adu,0,0,1,ADU added to an existing garage
+BLDG1169666,adu,0,0,1,Basement ADU
+BLDG1173206,adu,0,0,1,Garage with ADU above
+BLDG1136657,not counted,0,0,0,Attic finish; description states no ADU
+BLDG1157042,adu,0,0,1,Detached studio ADU
+BLDG1165107,adu,0,0,1,Garage with ADU above
+BLDG1181352,adu,0,0,1,Garage with ADU above
+BLDG1172812,adu,0,0,1,Garage second floor finished as an ADU
+BLDG1177390,adu,0,0,1,Garage with ADU above
+BLDG1162588,not counted,0,0,0,Legalizes a room above a garage as an ADU
+BLDG1184276,adu,0,0,1,Garage with ADU above
+BLDG1185894,adu,0,0,1,Basement ADU
+BLDG1196634,adu,0,0,1,Basement ADU
+BLDG966820,duplicate,,0,0,Re-issue of BLDG893946 for a new energy model; its 222 units are already counted
+BLDG1025006,duplicate,,0,0,Administrative re-permit to finish the house permitted under BLDG967039
+BLDG1171713,duplicate,,0,0,Re-permit to finish a house started under earlier permits
+BLDG828824,new construction,2,0,0,New duplex recorded as 0 units
+BLDG923457,new construction,2,0,0,New duplex recorded as 0 units
+BLDG892437,new construction,2,0,0,New side-by-side two-unit dwelling recorded as 0 units
+BLDG968345,new construction,2,0,0,New two-family dwelling recorded as 0 units
+BLDG951589,new construction,2,0,0,New two-family dwelling recorded as 0 units
+BLDG994987,new construction,2,0,0,New two-family dwelling recorded as 0 units
+BLDG961461,new construction,2,0,0,New two-family dwelling recorded as 0 units
+BLDG1040978,new construction,2,0,0,New two-family dwelling recorded as 0 units
+BLDG1053925,new construction,2,0,0,New two-family dwelling recorded as 0 units
+BLDG1088779,new construction,2,0,0,New two-family dwelling recorded as 0 units
+BLDG865937,new construction,2,0,0,New two-family dwelling recorded as 1 unit
+BLDG1016181,new construction,2,0,0,Completes the duplex permitted under BLDG790824 (cancelled); recorded as 0 units
+BLDG915822,new construction,6,0,0,6 new townhouses recorded as 0 units
+BLDG873960,new construction,7,0,0,New 7-unit apartment building recorded as 0 units
+BLDG1038535,new construction,28,0,0,28 dwelling units plus a 54-bed shelter; recorded as 45 units
+BLDG1143289,new construction,1,0,0,"New single-family house with no description, recorded as 0 units"
+BLDG1141955,new construction,1,0,0,"New single-family house with no description, recorded as 0 units"
+BLDG1083958,new construction,1,0,0,"New single-family house with no description, recorded as 0 units"
+BLDG1045848,new construction,2,0,1,Side-by-side duplex with a detached ADU; recorded as 3 units
+BLDG790824,not counted,,0,0,Status Cancelled or Expired
+BLDG759982,not counted,,0,0,House and garage shell; the ADU was finished under BLDG946844
+BLDG759156,new construction,,0,1,New duplex with a basement ADU
+BLDG903434,new construction,,0,1,New house with a detached ADU
+BLDG927667,new construction,,0,1,New house with a garage ADU
+BLDG960814,new construction,,0,1,New house with a detached ADU
+BLDG989458,not counted,,0,0,Existing alley house becomes an ADU; no ADU created
+BLDG958008,new construction,,0,1,New duplex with an ADU
+BLDG1031280,adu,0,0,1,Garage with attic ADU (coded new construction)
+BLDG1087135,new construction,,0,1,New house with a main-floor ADU
+BLDG1042301,new construction,,0,1,New house with a basement ADU
+BLDG1134640,new construction,,0,1,New townhome with a garage ADU

@@ -1,0 +1,10 @@
+side,source,permits,units
+added,New construction,711,12431
+added,Units added to existing buildings,75,2024
+added,Conversions of 1-3 unit buildings,66,67
+added,Total dwelling units added,852,14522
+added,ADUs,84,84
+removed,Demolitions (parcels with units),480,687
+removed,Units converted to other uses or combined,12,15
+removed,De-conversions (duplex or triplex to fewer units),43,44
+removed,Total dwelling units removed,535,746
