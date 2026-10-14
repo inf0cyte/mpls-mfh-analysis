@@ -1,0 +1,7 @@
+type,permits,units_in_building,existing_units_removed_same_lot,net_units
+New duplex,46,92,40,52
+New triplex,23,69,18,51
+SFD to duplex,14,14,0,14
+Duplex to triplex,20,20,0,20
+SFD to triplex,1,2,0,2
+Total,104,197,58,139

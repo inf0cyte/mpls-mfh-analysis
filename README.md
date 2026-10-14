@@ -60,13 +60,11 @@ housing growth. Without that, it is hard to judge what the plan's expanded permi
 From 2020-01-01 through 2026-09-24:
 
 - **197 dwelling units in 104 duplex and triplex permits** were permitted in zones where that building type was banned before the 2040 Plan: 46 new duplexes (92 units), 23 new triplexes (69 units) and 35 conversions of existing buildings (36 units).
-- **That is 1.4% of the city's net housing growth** of 13,776 units (14,522 added, 746 removed).
+- **51 of the 69 new buildings replaced housing on the same lot**, removing 58 existing dwelling units. Conversions keep the existing building, so nothing is removed for them.
+- **Net of those removals, the permits add 139 units, 1.0% of the city's net housing growth** of 13,776 units (14,522 added, 746 removed). Before subtracting the removals, the 197 units are 1.4%.
 
-Counting only the units the old code did not allow on each lot (for example, 1 unit for a new duplex on a lot where
-a house was already allowed), the figure is **117 units, 0.8% of net growth**.
-
-The share was between 0.8% and 2.5% each year from 2020 to 2024, then 7.0% in 2025, when citywide net growth fell to
-399 units while plan-enabled permits held steady.
+The net share was between 0.6% and 1.8% each year from 2020 to 2024, then 4.5% in 2025, when citywide net growth fell
+to 399 units while plan-enabled permits held steady.
 
 Three sites rezoned by owner application are left out: one duplex site rezoned before the plan and two triplex sites
 rezoned after it. Definitions are in 6.10.
@@ -81,38 +79,55 @@ rezoned after it. Definitions are in 6.10.
 
 ### 3.1 By building type
 
-| Type | Permits | Units in the building | Units above the prior limit |
-|---|---|---|---|
-| New duplex (in R1, R1A) | 46 | 92 | 46 |
-| New triplex in R1, R1A | 12 | 36 | 24 |
-| New triplex in R2, R2B | 11 | 33 | 11 |
-| SFD to duplex (in R1, R1A) | 14 | 14 | 14 |
-| Duplex to triplex | 20 | 20 | 20 |
-| SFD to triplex | 1 | 2 | 2 |
-| **Total** | **104** | **197** | **117** |
+| Type | Permits | Units in the building | Existing units removed from the same lot | Net units |
+|---|---|---|---|---|
+| New duplex (in R1, R1A) | 46 | 92 | 40 | 52 |
+| New triplex (in R1, R1A, R2, R2B) | 23 | 69 | 18 | 51 |
+| SFD to duplex (in R1, R1A) | 14 | 14 | 0 | 14 |
+| Duplex to triplex | 20 | 20 | 0 | 20 |
+| SFD to triplex | 1 | 2 | 0 | 2 |
+| **Total** | **104** | **197** | **58** | **139** |
 
 - **Units in the building:** every unit the permit adds: new duplex 2, new triplex 3, SFD to duplex 1, duplex to triplex 1, SFD to triplex 2.
-- **Units above the prior limit:** only the units the pre-2040 code did not allow on the lot. A new duplex where a house was allowed adds 1. A new triplex adds 2 where a house was allowed (R1, R1A) and 1 where a duplex was allowed (R2, R2B). Conversions add all their units.
+- **Existing units removed from the same lot:** the dwelling units in buildings that stood on the lot and were removed on or after 2020-01-01 to make way for the new duplex or triplex. Conversions keep the existing building, so they remove none. Method in 6.10.
+- **Net units:** units in the building minus existing units removed from the same lot.
 
-11 of the 46 new duplexes replaced a house demolished on the same lot. That house is counted in the citywide removals (4.7), not here.
+What stood on the lots of the 69 new buildings:
+
+| Before the new building | New duplexes | New triplexes |
+|---|---|---|
+| 1-unit building, removed | 34 | 11 |
+| 2-unit building, removed | 3 | 2 |
+| 3-unit building, removed | 0 | 1 |
+| Vacant land in every assessor snapshot from 2017 | 4 | 8 |
+| Lot newly split from a lot whose house remains or was replaced by a new house | 2 | 0 |
+| Second building beside a 4-unit building that remains | 1 | 0 |
+| Commercial building with no dwelling units, removed | 1 | 0 |
+| House removed before 2020-01-01, not subtracted | 1 | 1 |
+| **Total** | **46** | **23** |
+
+On 4 lots the new building replaced one with the same number of units, adding nothing net. 45 of the 51 removals
+have a wrecking permit. The other 6 show in the assessor records only: a dwelling on the lot before the permit and
+none after it. Every lot is listed in `data/derived/headline_same_lot.csv`.
 
 <a name="sec-3-2"></a>
 
 ### 3.2 By year, and share of net housing growth
 
-| Year | Permits | Units in the building | Units above the prior limit | Citywide net gain (4.7) | Share, units in the building | Share, units above the prior limit |
-|---|---|---|---|---|---|---|
-| 2020 | 19 | 35 | 21 | 3,358 | 1.0% | 0.6% |
-| 2021 | 19 | 36 | 22 | 2,879 | 1.3% | 0.8% |
-| 2022 | 18 | 35 | 22 | 4,249 | 0.8% | 0.5% |
-| 2023 | 18 | 40 | 20 | 1,760 | 2.3% | 1.1% |
-| 2024 | 11 | 18 | 11 | 720 | 2.5% | 1.5% |
-| 2025 | 16 | 28 | 18 | 399 | 7.0% | 4.5% |
-| 2026 (to Sept 24) | 3 | 5 | 3 | 411 | 1.2% | 0.7% |
-| **Total** | **104** | **197** | **117** | **13,776** | **1.4%** | **0.8%** |
+| Year | Permits | Units in the building | Existing units removed from the same lot | Net units | Citywide net gain (4.7) | Share, units in the building | Share, net units |
+|---|---|---|---|---|---|---|---|
+| 2020 | 19 | 35 | 12 | 23 | 3,358 | 1.0% | 0.7% |
+| 2021 | 19 | 36 | 11 | 25 | 2,879 | 1.3% | 0.9% |
+| 2022 | 18 | 35 | 8 | 27 | 4,249 | 0.8% | 0.6% |
+| 2023 | 18 | 40 | 11 | 29 | 1,760 | 2.3% | 1.6% |
+| 2024 | 11 | 18 | 5 | 13 | 720 | 2.5% | 1.8% |
+| 2025 | 16 | 28 | 10 | 18 | 399 | 7.0% | 4.5% |
+| 2026 (to Sept 24) | 3 | 5 | 1 | 4 | 411 | 1.2% | 1.0% |
+| **Total** | **104** | **197** | **58** | **139** | **13,776** | **1.4%** | **1.0%** |
 
-Plan-enabled units stayed between 18 and 40 a year. The share rose in 2023 to 2025 because citywide net growth fell
-from over 4,000 units in 2022 to 399 in 2025.
+Each removal is counted in the year the duplex or triplex permit was issued. Net plan-enabled units were between 13
+and 29 a year from 2020 to 2025. The share rose in 2023 to 2025 because citywide net growth fell from over 4,000
+units in 2022 to 399 in 2025.
 
 ---
 
@@ -480,7 +495,8 @@ matched address and score are kept in `zoning_point_lookups.csv`. All three matc
 
 ### 6.6 Units
 Units are gross units added by the permit: new duplex = 2, new triplex = 3, SFD to duplex = +1,
-duplex to triplex = +1, SFD to triplex = +2. Sections 3 and 4.1 to 4.5 do not subtract demolitions; 4.6 to 4.8 do.
+duplex to triplex = +1, SFD to triplex = +2. Sections 4.1 to 4.5 do not subtract demolitions. Section 3 subtracts the
+units removed from the same lot (6.10), and 4.6 to 4.8 subtract every removal citywide.
 
 <a name="sec-6-7"></a>
 
@@ -498,7 +514,8 @@ HTTP stack, sending POST bodies exactly as CPython does.
 4. The raw JSON and zoning lookups were then copied out of the browser (SHA-256 verified). The raw CSVs and
    everything in `data/derived/` were regenerated with **native CPython 3.11 on Linux** using the same scripts.
    All 11 files written by `analyze.py` and `net_units.py` are byte-identical to the browser run. `headline.py`
-   reads only those files and `data/manual/rezoned_sites.csv`, and was run natively.
+   reads only those files, the raw pulls and two manual files, and was run natively. The assessor records behind
+   `data/manual/same_lot_review.csv` were queried live from the same browser.
 
 **Schema handling (see 6.8).** The unit-field conversion in `classify.py` was tested three ways:
 - *Integer data:* run on raw files from before the schema change (integer unit fields), the current scripts produce `data/derived/` files byte-identical to the scripts written for that schema.
@@ -555,9 +572,31 @@ which also holds 21 new-construction entries (the 3 re-issues and 18 count corre
 
 ### 6.10 Plan-enabled units (`headline.py`)
 A duplex or triplex permit counts as plan-enabled when its site was in a district that did not allow the building
-type before the plan (6.5): a duplex in R1 or R1A, a triplex in R1, R1A, R2 or R2B. Sections 2 and 3 report two unit
+type before the plan (6.5): a duplex in R1 or R1A, a triplex in R1, R1A, R2 or R2B. Sections 2 and 3 report three unit
 counts for these permits, defined in 3.1. The share of growth divides by the citywide net gain in the same year (4.7),
 because "housing growth" here means units added minus units removed.
+
+**Existing units removed from the same lot.** Only dwelling units removed on or after 2020-01-01, the start of the
+window, are subtracted.
+- **Wrecking permits:** every active wrecking permit in the pull (all issued on or after 2020-01-01) whose parcel id
+  or address matches any row of the new building's permit. Its units are those of its demolished parcel in
+  `data/derived/demolitions_by_parcel.csv` (6.9), counted once per parcel. 46 of the 69 new buildings match one; one
+  of those parcels held a commercial building with no dwelling units. A wrecking permit is often issued after the
+  building permit: at 1076 14th Ave SE the duplex was permitted 2020-10-22 and the 2-unit building on the lot was
+  wrecked under a permit issued 2020-12-10.
+- **No wrecking permit:** the other 23 new buildings are each reviewed in `data/manual/same_lot_review.csv` against
+  the assessor snapshots for the parcel and any parcel it was split from, and the permit history at nearby addresses.
+  Each row records the units removed, when (a wrecking permit date, or the last assessor year that still shows the
+  dwelling), the evidence and a note. 6 show a dwelling removed in 2020 or later. Two show a house removed before 2020
+  and are not subtracted: 4433 Beard Ave S (wrecked 2019-11-19, duplex permitted 2020-06-23) and 1911 32nd St E
+  (wrecked 2018-05-09, vacant until the triplex was permitted in 2022). At 1709 Rollins Ave SE the duplex lot was split
+  in 2023 from 1717 Rollins Ave SE, whose house was wrecked and replaced by a new house on its own parcel, so nothing is
+  subtracted from the duplex.
+- `headline.py` stops if a plan-enabled new building has no matching wrecking permit and no review row, if a review
+  row names any other permit, or if one demolished parcel matches two new buildings.
+
+The permit's own `dwellingUnitsEliminated` field is not used. It is filled in on 10 of the 45 lots with a wrecking
+permit and records 2 units at 2406 McNair Ave, where the assessor shows vacant land throughout.
 
 **Sites rezoned by owner application are left out.** Five permit sites are in a different district on the 2023 map
 than on the 2017 map. City Council records show that the three of them counted as newly allowed were rezoned at the
@@ -582,7 +621,7 @@ Sources: City Council marked agendas for [2018-07-20](https://lims.minneapolismn
 [2022-10-06](https://lims.minneapolismn.gov/MarkedAgenda/Council/3502). For 405 31st St E, the permit and the
 rezoning use different addresses for the corner lot. The assessor shows 3101 4th Ave S with 0 units in 2021 and 3 in 2023.
 
-Leaving them out removes 3 permits, 8 units in the building and 5 units above the prior limit.
+Leaving them out removes 3 permits and 8 units in the building.
 
 ---
 
@@ -597,7 +636,7 @@ python3 scripts/run_all.py          # re-pulls everything (~2 minutes) and print
 
 Statuses change daily, so a later pull can give slightly different counts even for the same window. To extend
 the window, change `UNTIL` in `scripts/arcgis.py`; new permits will then need decisions in the manual files, and
-`net_units.py` lists any that are missing.
+`net_units.py` and `headline.py` list any that are missing.
 
 **Spot-check an arbitrary sample**
 
@@ -641,7 +680,9 @@ find the same `permitNumber` in `data/raw/permits_manually_classified.csv`, and 
 The `note` column says why it was classified the way it was. `unit_change_review.csv` works the same way against
 `permits_unit_changes.csv`, `permits_adu_mentions.csv` and `permits_new_construction.csv`.
 `data/derived/net_units_permits.csv` lists every permit counted in 4.6 and 4.7, and
-`data/derived/demolitions_by_parcel.csv` shows each demolished parcel with its permit-code and assessor counts.
+`data/derived/demolitions_by_parcel.csv` shows each demolished parcel with its permit-code and assessor counts, and
+`data/derived/headline_same_lot.csv` shows each plan-enabled new building with the units removed from its lot and the
+wrecking permits or assessor evidence behind them.
 
 ---
 
@@ -659,7 +700,7 @@ scripts/
   classify.py       the selection rules shared by pull_zoning.py, analyze.py and net_units.py
   analyze.py        produces the duplex, triplex and single-family tables (4.1 to 4.5, 4.10)
   net_units.py      produces the units added, removed and net tables (4.6 to 4.8)
-  headline.py       produces the plan-enabled unit counts and shares (2, 3)
+  headline.py       produces the plan-enabled unit counts, same-lot removals and shares (2, 3)
   run_all.py        runs pull_permits -> pull_zoning -> pull_assessor -> analyze -> net_units -> headline
   sample.py         pull arbitrary samples from the live sources to validate the method
 data/
@@ -680,6 +721,8 @@ data/
     unit_change_review.csv                    404 permits reviewed for the citywide unit count (see 6.9)
     demolition_review.csv                     demolitions handled by hand (see 6.9)
     rezoned_sites.csv                         sites rezoned by owner application, left out of the headline (see 6.10)
+    same_lot_review.csv                       23 plan-enabled new buildings with no wrecking permit, checked against
+                                              the assessor records for units removed from the lot (see 6.10)
   derived/          outputs of analyze.py, net_units.py and headline.py
 ```
 
@@ -696,7 +739,9 @@ Requirements: Python 3.9 or newer. No third-party packages are needed.
 - **Rezonings by application** were checked only for the 5 sites whose district differs between the 2017 and 2023 maps (6.10). A site rezoned and later rezoned back would not show up, and the 2023 map does not show rezonings after June 2023.
 - **Nonconforming uses:** a duplex-to-triplex conversion in R1 or R1A (4 permits) started from an existing duplex that predates the old rules.
 - **Scope of the zoning rule:** it is based on the primary residential districts. Overlay districts and other code conditions (lot size, floor-area ratio, height) are not modeled.
-- **Gross and net counts:** the duplex and triplex counts in sections 3 and 4.1 to 4.5 are gross. Demolitions are subtracted only in the citywide count (4.7).
+- **Gross and net counts:** the duplex and triplex counts in 4.1 to 4.5 are gross. Section 3 subtracts only the units removed from the same lot; the citywide count (4.7) subtracts every recorded removal.
+- **Removals without a wrecking permit:** 6 of the 58 units removed from plan-enabled lots have no wrecking permit and were found in the assessor records (6.10). They are subtracted in section 3 but are not among the citywide removals in 4.7, which come from wrecking permits, so citywide net growth is overstated by at least 6 units. Removals elsewhere in the city with no wrecking permit are not detected.
+- **Removal dates from assessor snapshots:** where there is no wrecking permit, the removal is dated by the last yearly snapshot that still shows the dwelling, and a snapshot can lag a demolition (4433 Beard Ave S was wrecked 2019-11-19 and still shows a house in 2020). The houses at 1828 McKinley St NE and 3117 43rd St W are last shown in 2020; if either came down before 2020-01-01, it would not be subtracted and the net would be 1 unit higher for each.
 - **Recorded unit counts:** new-construction units are taken as the city recorded them except where 6.9 lists a correction. A description that does not state a unit count cannot be checked.
 - **Assessor snapshots are yearly** and describe parcels, not buildings. A parcel with several buildings is counted as a whole, and the 20 parcels with no assessor record rely on the permit's occupancy code.
 - **ADU removals are not tracked**, so "net with ADUs" counts ADUs created only.
