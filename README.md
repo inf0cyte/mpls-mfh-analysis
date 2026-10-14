@@ -10,7 +10,37 @@ The permit data was pulled on **2026-10-14 00:17 UTC** and the assessor data on 
 permit layer had last been edited at 2026-10-13 20:04 UTC. Every query is limited to permits issued from
 2020-01-01 through 2026-09-24.
 
+## Contents
+
+- [1. Scope of the data](#sec-1)
+- [2. Repository layout](#sec-2)
+- [3. Methodology](#sec-3)
+  - [3.1 Pulling permits (`pull_permits.py`)](#sec-3-1)
+  - [3.2 Automatic selection rules (`classify.py`)](#sec-3-2)
+  - [3.3 Why conversions need manual classification](#sec-3-3)
+  - [3.4 Manual classification (`data/manual/conversion_classification.csv`)](#sec-3-4)
+  - [3.5 Zoning test (`pull_zoning.py`)](#sec-3-5)
+  - [3.6 Units](#sec-3-6)
+  - [3.7 How the scripts were tested](#sec-3-7)
+  - [3.8 Source schema change (October 2026)](#sec-3-8)
+  - [3.9 Citywide unit count (`net_units.py`)](#sec-3-9)
+- [4. Validating the method yourself](#sec-4)
+- [5. Findings](#sec-5)
+  - [5.1 Published estimates (literature, not reproduced by these scripts)](#sec-5-1)
+  - [5.2 The permit layer's unit fields are unreliable for conversions](#sec-5-2)
+  - [5.3 Duplex and triplex permits, 2020-01-01 to 2026-09-24](#sec-5-3)
+  - [5.4 New duplexes and triplexes by year](#sec-5-4)
+  - [5.5 Conversions versus de-conversions](#sec-5-5)
+  - [5.6 How many permits were in areas where the building type was previously banned](#sec-5-6)
+  - [5.7 New single-family homes, same period](#sec-5-7)
+  - [5.8 All dwelling units permitted, same period](#sec-5-8)
+  - [5.9 Units removed and net gain](#sec-5-9)
+  - [5.10 Demolitions in detail](#sec-5-10)
+- [6. Limitations](#sec-6)
+
 ---
+
+<a name="sec-1"></a>
 
 ## 1. Scope of the data
 
@@ -28,6 +58,8 @@ permit layer had last been edited at 2026-10-13 20:04 UTC. Every query is limite
 | Not pulled | Applicant names and addresses exist in the source layer but were deliberately left out. Assessor owner fields were not pulled either. |
 
 ---
+
+<a name="sec-2"></a>
 
 ## 2. Repository layout
 
@@ -67,7 +99,11 @@ Requirements: Python 3.9 or newer. No third-party packages are needed.
 
 ---
 
+<a name="sec-3"></a>
+
 ## 3. Methodology
+
+<a name="sec-3-1"></a>
 
 ### 3.1 Pulling permits (`pull_permits.py`)
 Six queries are sent to the `CCS_Permits` layer, each limited to permits issued in the window. The exact SQL
@@ -89,6 +125,8 @@ Before querying, the script reads the layer's field list and stops if any field 
 has an unexpected type (`check_permit_schema` in `arcgis.py`). The field types it saw are written to the
 manifest as `field_types`.
 
+<a name="sec-3-2"></a>
+
 ### 3.2 Automatic selection rules (`classify.py`)
 - **Duplicate rows:** the source layer sometimes holds more than one row per permit number. Each permit counts once, using the row with the lowest OBJECTID. Duplicate rows agree on status, codes and unit counts, but can carry different coordinates and parcel ids, so the zoning and assessor lookups use every row (3.5, 3.9).
 - **New duplex:** a new-construction permit with `occupancyType` of `TFD` (two-family dwelling) or `TH` (townhouse), `dwellingUnitsNew = 2`, and a status other than Cancelled or Expired. Thirteen more permits are added from the manual file: twelve new two-family dwellings whose unit fields are coded 0 or 1, and one coded as 3 units whose description is a duplex plus an ADU.
@@ -96,12 +134,16 @@ manifest as `field_types`.
 - **Excluded two- and three-unit new permits:** mixed-use and commercial projects (`Mixed`, `Comm`, and one `3to4` record that is really a triplex-to-duplex change) are left out. `analyze.py` prints how many raw rows fall under each occupancy code, so the exclusions can be checked.
 - **New single-family home:** a new-construction permit with `occupancyType = 'SFD'`, excluding Cancelled permits, minus two permits that only finish a house started under an earlier permit.
 
+<a name="sec-3-3"></a>
+
 ### 3.3 Why conversions need manual classification
 The permit layer's unit fields cannot be trusted for conversions:
 - `dwellingUnitsNew` and `dwellingUnitsEliminated` are used inconsistently. Some single-family-to-duplex permits show `2/1`, others `1/0`, `1/1` or `0/0`. A duplex-to-single-family permit can also show `2/1`.
 - `occupancyType` is sometimes the building's type before the work and sometimes its type after.
 
 So conversions were identified by **reading each permit description**. Filtering on unit fields misses some conversions and wrongly includes some reverse conversions.
+
+<a name="sec-3-4"></a>
 
 ### 3.4 Manual classification (`data/manual/conversion_classification.csv`)
 Every permit whose description describes adding or removing a unit in a 1- to 3-unit building was assigned one category and given a note:
@@ -119,6 +161,8 @@ Every permit whose description describes adding or removing a unit in a 1- to 3-
 
 As a completeness check, `analyze.py` runs a second regular-expression screen over all 827 candidates. It flags any active permit whose description reads like a conversion but is missing from the manual file, and writes those to `data/derived/unreviewed_conversion_candidates.csv`. **For this pull that file is empty (0 rows).**
 
+<a name="sec-3-5"></a>
+
 ### 3.5 Zoning test (`pull_zoning.py`)
 For each counted duplex or triplex permit, the permit's `Latitude`/`Longitude` is sent to the city's zoning
 layers as an ArcGIS point-intersect query. The district is recorded on two maps:
@@ -134,9 +178,13 @@ matched address and score are kept in `zoning_point_lookups.csv`. All three matc
 - a **duplex** (new build or conversion) is newly allowed if the 2017 district is **R1 or R1A**;
 - a **triplex** (new build or conversion) is newly allowed if the 2017 district is **R1, R1A, R2 or R2B**.
 
+<a name="sec-3-6"></a>
+
 ### 3.6 Units
 Units are gross units added by the permit: new duplex = 2, new triplex = 3, SFD to duplex = +1,
 duplex to triplex = +1, SFD to triplex = +2. Sections 5.3 to 5.7 do not subtract demolitions; 5.8 to 5.10 do.
+
+<a name="sec-3-7"></a>
 
 ### 3.7 How the scripts were tested
 The workspace that wrote these scripts could not reach the city's ArcGIS servers, but a web browser on the
@@ -166,6 +214,8 @@ What has **not** been exercised is the network pull (`pull_permits.py`, `pull_zo
 `sample.py`) under a native desktop Python with direct network access. If one fails there, the cause will be in
 `arcgis._post`, which is 15 lines of standard `urllib`.
 
+<a name="sec-3-8"></a>
+
 ### 3.8 Source schema change (October 2026)
 The city changed the `CCS_Permits` schema between 2026-09-28 and 2026-10-13. The old schema was still in place
 on 2026-09-28, and the new one was observed on 2026-10-13. The exact date is unknown: the layer is republished
@@ -179,6 +229,8 @@ before any rule runs, and also reads raw files pulled under the old schema.
 
 If the city changes the schema again, `pull_permits.py` stops before pulling and names each problem field.
 Update `PERMIT_FIELDS` and `PERMIT_FIELD_TYPES` in `scripts/arcgis.py` to match.
+
+<a name="sec-3-9"></a>
 
 ### 3.9 Citywide unit count (`net_units.py`)
 Every permit in the window that adds or removes a dwelling unit is counted once, in the year it was issued.
@@ -201,6 +253,8 @@ permits in the two queries, 87 are decided by `conversion_classification.csv` an
 which also holds 21 new-construction entries (the 3 re-issues and 18 count corrections) outside the two queries.
 
 ---
+
+<a name="sec-4"></a>
 
 ## 4. Validating the method yourself
 
@@ -259,7 +313,11 @@ The `note` column says why it was classified the way it was. `unit_change_review
 
 ---
 
+<a name="sec-5"></a>
+
 ## 5. Findings
+
+<a name="sec-5-1"></a>
 
 ### 5.1 Published estimates (literature, not reproduced by these scripts)
 These figures come from the linked publications and were not recomputed here:
@@ -269,11 +327,15 @@ These figures come from the linked publications and were not recomputed here:
 - **Axios (Mar 2021):** 16 new duplexes and 4 triplexes in 2020, plus 22 existing properties converted to duplexes or triplexes. [source](https://www.axios.com/local/twin-cities/2021/03/01/minneapolis-triplex-legalize-impact-little)
 - **Court order:** from 2023-11-04, a Hennepin County District Court order stopped triplexes in areas that previously allowed only single-family homes and duplexes (reported in the Minneapolis Fed 2024 article above).
 
+<a name="sec-5-2"></a>
+
 ### 5.2 The permit layer's unit fields are unreliable for conversions
 See 3.3. Among raw new-construction rows, 86 rows (83 distinct permits) have `dwellingUnitsNew = 2`, spread across
 occupancy codes TFD 80, TH 3, Comm 1, Mixed 1, 3to4 1. Another 34 rows (31 permits) have `dwellingUnitsNew = 3`:
 3to4 28, Comm 3, Mixed 1, TFD 1, TH 1. Conversion permits code units inconsistently. This is why conversions
 were classified by reading descriptions.
+
+<a name="sec-5-3"></a>
 
 ### 5.3 Duplex and triplex permits, 2020-01-01 to 2026-09-24
 
@@ -289,6 +351,8 @@ were classified by reading descriptions.
 Of the 92 new duplex permits, 20 also record an eliminated unit, usually a demolished house on the same lot.
 Those 20 add a net of 1 unit each, not 2. None of the new triplex permits record an eliminated unit.
 
+<a name="sec-5-4"></a>
+
 ### 5.4 New duplexes and triplexes by year
 
 | Year | New duplex | New triplex |
@@ -303,6 +367,8 @@ Those 20 add a net of 1 unit each, not 2. None of the new triplex permits record
 | **Total** | **92** | **28** |
 
 No new triplexes were permitted in 2024, the year after the court order in 5.1, and only 2 have been permitted since.
+
+<a name="sec-5-5"></a>
 
 ### 5.5 Conversions versus de-conversions
 
@@ -326,6 +392,8 @@ Physical permits by year:
 | 2026 (to Sept 24) | 4 | 8 |
 
 Across the whole period, de-conversions removed about two-thirds as many units as conversions added. In 2025 and 2026 there were more de-conversions than conversions.
+
+<a name="sec-5-6"></a>
 
 ### 5.6 How many permits were in areas where the building type was previously banned
 
@@ -370,6 +438,8 @@ Readings:
 - Most duplex activity was already legal. About half of new duplexes and two-thirds of SFD-to-duplex conversions are in R2B or denser zones.
 - Only 61 duplex permits (47 new, 14 conversions) are on formerly single-family-only land, adding 108 units gross.
 
+<a name="sec-5-7"></a>
+
 ### 5.7 New single-family homes, same period
 
 | Year | New single-family | New duplex | New triplex |
@@ -388,6 +458,8 @@ Readings:
 - 7 single-family permit descriptions mention an ADU. Six build a new ADU, and one (5615 Penn Ave S) turns an existing alley house into the ADU.
 - 3 single-family permits have no description and `dwellingUnitsNew = 0`. They are kept because their codes say new single-family construction.
 
+<a name="sec-5-8"></a>
+
 ### 5.8 All dwelling units permitted, same period
 
 | Source | Permits | Units |
@@ -401,6 +473,8 @@ Readings:
 Duplexes and triplexes are a small share of the total: the 268 units in new duplexes and triplexes (5.3) are about
 2% of the units added. ADUs are recorded by the city as 0 dwelling units, and many ADU permits state "THIS PERMIT
 DOES NOT CREATE AN ADDITIONAL DWELLING UNIT", so they are kept out of the dwelling-unit total.
+
+<a name="sec-5-9"></a>
 
 ### 5.9 Units removed and net gain
 
@@ -427,6 +501,8 @@ of the units added.
 
 Removals stayed at about 100 to 140 units a year while additions fell sharply after 2022. In 2025, removals offset
 more than a fifth of the units added.
+
+<a name="sec-5-10"></a>
 
 ### 5.10 Demolitions in detail
 646 active demolition permits covered 632 parcels; 7 parcels had more than one permit. 152 of the parcels held no
@@ -495,6 +571,8 @@ Demolished buildings with 4 or more units:
 | 718 14th Ave SE | 2025 | 4 | assessor, permit year |
 
 ---
+
+<a name="sec-6"></a>
 
 ## 6. Limitations
 - **Permits are not completions.** Some permits are still `Issued` or `Open`: 20 and 3 of the new duplexes, 6 of the new triplexes. Some permitted units will not be built, and a few permitted demolitions may not happen.
