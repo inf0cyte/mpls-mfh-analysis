@@ -66,8 +66,7 @@ From 2020-01-01 through 2026-09-24:
 The net share was between 0.6% and 1.8% each year from 2020 to 2024, then 4.5% in 2025, when citywide net growth fell
 to 399 units while plan-enabled permits held steady.
 
-Three sites rezoned by owner application are left out: one duplex site rezoned before the plan and two triplex sites
-rezoned after it. Definitions are in 6.10.
+Definitions and exclusions are in 6.10.
 
 ---
 
